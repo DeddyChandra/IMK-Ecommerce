@@ -1,2 +1,2 @@
 # TUBES IMK
-imk
+Interaksi Manusia Komputer
