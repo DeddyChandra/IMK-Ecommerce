@@ -15,7 +15,6 @@
 
 body{
     font-family: Roboto;
-    height: fit-content;
 }
 
 .Roboto_bold{
@@ -57,6 +56,26 @@ button:focus {
 	padding-left:32px;
 }
 
+.inlineblock {
+    display: inline-block;
+}
+
+.card {
+    margin: 2%;
+    padding: 0;
+}
+
+.card-img {
+    border-radius: 8px 8px 0 0;
+}
+
+.price {
+    color: #D61D4E;
+}
+
+.discount {
+    font-size: 12px;
+}
 .carousel{
 	width:60vw;
 	height:500px;
