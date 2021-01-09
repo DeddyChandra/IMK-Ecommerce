@@ -55,3 +55,11 @@ button:focus {
 	padding-right:32px;
 	padding-left:32px;
 }
+
+.button_logo{
+    margin: -2px;
+}
+
+.border_black{
+    border: solid 1px black;
+}

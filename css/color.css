@@ -9,16 +9,12 @@
 }
 
 .facebook_color{
-	background-color:#3B40B5;
-	color: white;
-	border: solid;
-	border-color: #D61D4E;
-	background-color:#D61D4E;
-	color:white;
+	background-color:#3B40B5 !important;
+	color: white !important;
 }
 
 .color3{
 	border: solid;
-	border-color: #D61D4E;
-	box-sizing: border-box;
+	border-color: #D61D4E !important;
+	box-sizing: border-box !important;
 }
