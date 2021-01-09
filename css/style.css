@@ -1,3 +1,50 @@
+@font-face{
+	font-family: 'Roboto-Bold';
+	src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@font-face{
+	font-family: 'Roboto';
+	src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face{
+	font-family: 'Roboto-Italic';
+	src: url("../fonts/Roboto-Italic.ttf");
+}
+
+body{
+    font-family: Roboto;
+}
+
+.Roboto_bold{
+    font-family: Roboto-Bold;
+}
+
+a{
+    color:#D61D4E;
+    text-decoration: underline;
+}
+
+.line_behind_text{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 30px 0; 
+}
+
+.line_behind_text_span{
+    background:#fff; 
+    padding:0 10px; 
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 .header{
 	width:100%;
 	
