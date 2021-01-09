@@ -45,10 +45,12 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+
 .header{
 	width:100%;
 	
 }
+
 .padding-lr-32{
 	padding-right:32px;
 	padding-left:32px;
@@ -73,4 +75,27 @@ button:focus {
 
 .discount {
     font-size: 12px;
+}
+.carousel{
+	width:50vw;
+	height:500px;
+	overflow:hidden;
+	z-index: 1;
+}
+.imagescar{
+	width:100vw;
+	height:700px;
+	object-fit:cover;
+
+}
+.carousel .w3-left,.carousel .w3-right,.carousel .w3-badge {cursor:pointer}
+.carousel .w3-badge {height:13px;width:13px;padding:0}
+
+
+.button_logo{
+    margin: -2px;
+}
+
+.border_black{
+    border: solid 1px black;
 }
