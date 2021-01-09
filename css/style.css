@@ -1,5 +1,8 @@
-
-/* Some */
-
-/* Something */
-
+.header{
+	width:100%;
+	
+}
+.padding-lr-32{
+	padding-right:32px;
+	padding-left:32px;
+}
