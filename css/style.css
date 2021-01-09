@@ -53,3 +53,24 @@ button:focus {
 	padding-right:32px;
 	padding-left:32px;
 }
+
+.inlineblock {
+    display: inline-block;
+}
+
+.card {
+    margin: 2%;
+    padding: 0;
+}
+
+.card-img {
+    border-radius: 8px 8px 0 0;
+}
+
+.price {
+    color: #D61D4E;
+}
+
+.discount {
+    font-size: 12px;
+}
