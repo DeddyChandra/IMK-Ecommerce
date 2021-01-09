@@ -1,9 +1,14 @@
 .color1{
-	background-color: #900C3F;
-	color:white;
+	background-color: #900C3F !important;
+	color:white !important;
 }
 
 .color2{
-	background-color:#D61D4E;
-	color:white;
+	background-color:#D61D4E !important;
+	color:white !important;
+}
+
+.facebook_color{
+	background-color:#3B40B5;
+	color: white;
 }
