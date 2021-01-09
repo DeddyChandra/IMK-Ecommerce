@@ -1,23 +1,48 @@
 <html>
 	<head>
-
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../css/footer.css">
+		<link rel="stylesheet" href="../../css/color.css">
+		<script src="../../lib/Chart.bundle.js"></script>
+		<script src="../../lib/utils.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../../lib/w3.css">
+		<link rel="stylesheet" href="../../lib/font-awesome.css">
+		<link rel="stylesheet" href="../../css/style.css">
+		<link rel="stylesheet" href="../../lib/colorThemes/w3-theme-light-blue.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<link rel="stylesheet" href="../../css/style.css">
 	</head>
 	<body>
 		<!-- NAV -->
-		<form>
-			<h1> Hello </h1>
-			<p> Sign in to FUNTASTIC or <a href = "#"> create an account</a></p>
-			<input type ="text" placeholder='Email or Username'>
-			<br>
-			<input type ="password" placeholder='Password'>
-			<br>
-			<a href = "#"> forgot password</a>
-			<input type ="checkbox" ><label for="vehicle1"> Stay signed in</label><br>
-			<p> Using a public or shared device Uncheck to protect your account</p>
-			<br>
-			<a href="#">Learn more </a>
-		</form>
+		<div class="w3-container w3-display-middle">
+			<form>
+				<h1 class="w3-xlarge Roboto_bold w3-center"> HELLO </h1>
+				<p class="w3-center"> Sign in to <b>Ekomers</b> or <a href = "#"> create an account</a></p>
+				<input class="w3-input" type ="text" placeholder='Email or Username'>
+				<br>
+				<input class="w3-input" type ="password" placeholder='Password'>
+				<br>
+				<p class="w3-center"><a href ="#">Forgot password</a></p>
+				<div class="w3-center">
+					<input type ="checkbox">
+					<label for="sign-in"> Stay signed in</label>
+				</div>
+				<p class="w3-center"> Using a public or shared device? <br>
+					Uncheck to protect your account.<br>	
+					<a href="#">Learn more </a>
+				</p>
+				<button type="submit" class="w3-btn w3-block color2 Roboto_bold">Login</button>
+			</form>
+			<p class="line_behind_text">
+				<span class="line_behind_text_span"><b>or</b></span>
+			</p>
+			<button type="submit" class="w3-btn w3-block color2 Roboto_bold">Continue with Facebook</button>
+			<button type="submit" class="w3-btn w3-block Roboto_bold">Continue with Google</button>
+		</div>
 	</body>
-
-
 </html>
