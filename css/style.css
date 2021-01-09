@@ -45,10 +45,12 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+
 .header{
 	width:100%;
 	
 }
+
 .padding-lr-32{
 	padding-right:32px;
 	padding-left:32px;
