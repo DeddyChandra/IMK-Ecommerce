@@ -15,6 +15,7 @@
 
 body{
     font-family: Roboto;
+    height: fit-content;
 }
 
 .Roboto_bold{
@@ -55,6 +56,7 @@ button:focus {
 	padding-right:32px;
 	padding-left:32px;
 }
+
 .carousel{
 	width:50vw;
 	height:500px;
@@ -69,3 +71,12 @@ button:focus {
 }
 .carousel .w3-left,.carousel .w3-right,.carousel .w3-badge {cursor:pointer}
 .carousel .w3-badge {height:13px;width:13px;padding:0}
+
+
+.button_logo{
+    margin: -2px;
+}
+
+.border_black{
+    border: solid 1px black;
+}
