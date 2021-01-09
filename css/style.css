@@ -58,14 +58,14 @@ button:focus {
 }
 
 .carousel{
-	width:50vw;
+	width:60vw;
 	height:500px;
 	overflow:hidden;
 	z-index: 1;
 }
 .imagescar{
-	width:100vw;
-	height:700px;
+	width:60vw;
+	height:500px;
 	object-fit:cover;
 
 }
