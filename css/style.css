@@ -145,3 +145,76 @@ button:focus {
     -ms-user-select: none;
     user-select: none;
 }
+
+.margin_top-25{
+    margin-top: -25;
+}
+
+br{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.indicator{
+    height: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.indicator span{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: lightgrey;
+    border-radius: 5px;
+}
+
+.indicator span:nth-child(2){
+    margin: 0 3px;
+}
+
+.indicator span.active:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.indicator span.weak:before{
+    background-color: #ff4757;
+  }
+
+.indicator span.medium:before{
+    background-color: orange;
+  }
+
+.indicator span.strong:before{
+    background-color: #23ad5c;
+  }
+
+.passwordText{
+    font-size: 15px;
+    font-weight: 500;
+    display: none;
+    margin-bottom: -10px;
+  }
+.passwordText.weak{
+    color: #ff4757;
+  }
+.passwordText.medium{
+    color: orange;
+  }
+.passwordText.strong{
+    color: #23ad5c;
+  }
+  

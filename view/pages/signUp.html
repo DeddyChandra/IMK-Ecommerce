@@ -17,6 +17,7 @@
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <script src="../../js/account.js" defer></script>
         <script src="../../js/script.js" defer></script>
+        <script src="../../js/togglePassword.js" defer></script>
 		<link rel="stylesheet" href="../../css/style.css">
 	</head>
 	<body>
@@ -33,9 +34,16 @@
 					<input class="w3-input" type ="text" placeholder='Email or Username'>
 					<br>
                     <input id="password" class="w3-input" type ="password" placeholder='Password'>
-                    <br>
+					<br>
+					<div class="indicator">
+                        <span class="weak"></span>
+                        <span class="medium"></span>
+                        <span class="strong"></span>
+                    </div>
+					<div class="passwordText w3-center"></div>
+					<br>
                     <input id="confirmPassword" class="w3-input" type ="password" placeholder='Confirm password'>
-                    <br>
+					<br>
                     <div class="w3-right">
                         <i class="far fa-eye togglePassword unselectable" id="togglePassword"> Show password</i>
                     </div>
