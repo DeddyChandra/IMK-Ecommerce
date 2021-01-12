@@ -99,3 +99,17 @@ button:focus {
 .border_black{
     border: solid 1px black;
 }
+
+.half_left{
+    width: 48%;
+    float: left;
+}
+
+.half_right{
+    width: 48%;
+    float: right;
+}
+
+.clear_float{
+    clear: both;
+}
