@@ -73,6 +73,11 @@ button:focus {
     color: #D61D4E;
 }
 
+#filter {
+    padding: 10%;
+    margin: 10%;
+}
+
 .discount {
     font-size: 12px;
 }
