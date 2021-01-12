@@ -39,3 +39,9 @@ function carousel(){
 }
 
 carousel();
+
+let logo = document.getElementById("logo");
+
+if(logo != null){
+
+}

@@ -126,6 +126,38 @@ button:focus {
 .border_black{
     border: solid 1px black;
 }
+
+.half_left{
+    width: 48%;
+    float: left;
+}
+
+.half_right{
+    width: 48%;
+    float: right;
+}
+
+.clear_float{
+    clear: both;
+}
+
 .margin-bottom-16{
     margin-bottom:16px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.togglePassword{
+    cursor: pointer;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
