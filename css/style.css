@@ -73,20 +73,31 @@ button:focus {
     color: #D61D4E;
 }
 
+#filter {
+    padding: 10%;
+    margin: 10%;
+}
+
 .discount {
     font-size: 12px;
 }
 .carousel{
-	width:60vw;
+	width:65vw;
 	height:500px;
 	overflow:hidden;
 	z-index: 1;
 }
 .imagescar{
-	width:60vw;
+	width:65vw;
 	height:500px;
+    margin-left:16px;
+    margin-right:16px;
 	object-fit:cover;
 
+}
+
+.padding-16{
+    padding:16px;
 }
 .carousel .w3-left,.carousel .w3-right,.carousel .w3-badge {cursor:pointer}
 .carousel .w3-badge {height:13px;width:13px;padding:0}
@@ -112,4 +123,8 @@ button:focus {
 
 .clear_float{
     clear: both;
+}
+
+.margin-bottom-16{
+    margin-bottom:16px;
 }
