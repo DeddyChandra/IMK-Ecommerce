@@ -16,11 +16,12 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <script src="../../js/account.js" defer></script>
+        <script src="../../js/script.js" defer></script>
 		<link rel="stylesheet" href="../../css/style.css">
 	</head>
 	<body>
         <!-- NAV -->
-        <img class="w3-display-topleft" style="width:15%;" src="../../img/logo_horizontal.png" alt="logo">
+        <img id="logo" class="w3-display-topleft pointer" style="width:15%;" src="../../img/logo_horizontal.png" alt="logo">
 		<div class="w3-display-container" style="height:120%;">
 			<div class="w3-display-middle" style="width: 30%">
 				<form>
@@ -31,15 +32,21 @@
                     <br>
 					<input class="w3-input" type ="text" placeholder='Email or Username'>
 					<br>
-					<input class="w3-input" type ="password" placeholder='Password'>
+                    <input id="password" class="w3-input" type ="password" placeholder='Password'>
                     <br>
-                    <input class="w3-input" type ="password" placeholder='Confirm password'>
+                    <input id="confirmPassword" class="w3-input" type ="password" placeholder='Confirm password'>
+                    <br>
+                    <div class="w3-right">
+                        <i class="far fa-eye togglePassword unselectable" id="togglePassword"> Show password</i>
+                    </div>
                     <br>
                     <div>
                         <input class="w3-input half_left" type ="text" placeholder='First name'>
                         <input class="w3-input half_right" type ="text" placeholder='Last name'>
                     </div>
                     <div class="clear_float"></div>
+                    <br>
+                    <input class="w3-input" type ="date" placeholder='Confirm password'>
                     <br>
                     <input class="w3-input" type ="number" placeholder='Telephone number'>
 					<br>
