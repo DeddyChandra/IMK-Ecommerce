@@ -34,9 +34,6 @@ a{
     vertical-align:middle;
 }
 
-
-
-
 .line_behind_text{
     width: 100%; 
     text-align: center; 
@@ -234,3 +231,6 @@ br{
     color: #23ad5c;
   }
   
+.marginLeftRight{
+    margin: 0 5px;
+}
