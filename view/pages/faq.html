@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/color.css">
+    <script src="../../lib/Chart.bundle.js"></script>
+    <script src="../../lib/utils.js"></script>
+    <script src="../../js/faq.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../lib/w3.css">
+    <link rel="stylesheet" href="../../lib/font-awesome.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../lib/colorThemes/w3-theme-light-blue.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Document</title>
+    <style>
+        canvas{
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+    <div class="w3-border" style="width:100vw;height:92px;position:relative;overflow:hidden">
+    	
+    	<img src="../../img/logo_horizontal.png" class="w3-left w3-margin " style='height:60px'>
+    	<a href="#" class="w3-button w3-left navbut">Home</a>
+		<a href="#" class="w3-button w3-left navbut">Shop</a>
+		<a href="aboutUs.html" class="w3-button w3-left navbut">About Us</a>
+		<a href="#" class="w3-button w3-left navbut leftbut">FAQ</a>
+		<a href="#" class="w3-button w3-left navbut leftbut">Dropdown</a>
+		
+		<div class="" style="position:absolute;top: 50%;right:0;transform: translateY(-50%);z-index:1;background-color:white ;height:91px">
+            <div class="" style="">
+                <a href="../pages/signUp.html" class="w3-button w3-round w3-border w3-right  margin-lr-16 color2 padding-lr-32" style="transform: translateY(50%)" >Log Out</a>
+            </div>
+		</div>
+	</div>
+</div>
+</head>
+<body>
+    <div class="center">
+        <div class="w3-container w3-margin-top">
+            <h1>How can we faq you today?</h1>
+            <input class="w3-input" type="text" placeholder="Search Ekomers faq">
+            <div class="margin_top-30 w3-right w3-margin-right pointer">
+                <i class="fas fa-search "></i>
+            </div>
+        </div>
+
+        <div class="w3-container w3-margin-top">
+            <h3>Frequently Asked Questions</h3>
+            <button class="w3-button w3-btn w3-block w3-left-align color1 opacity90" id="btn1">
+                <h5 class="w3-margin-left"><b>Buying as Guest</b>
+                    <i class="fas fa-caret-down w3-right w3-margin-right" id="triangle1"></i>
+                </h5>
+            </button>
+            <div class="w3-container w3-hide tab" id="content1">
+                <h4>You can shop for most things on Ekomers without needing an Ekomers account, but you’ll miss out on the benefits of being a member.</h4>
+                <div class="borderRed">
+                    <p>High shipping volumes are causing some delays. Please allow extra time after the expected delivery date before contacting the seller to let them know that your item hasn't arrived yet.</p>
+                </div>
+                <p>When you buy as a guest on Ekomers, you can still track your purchases and return items you’ve bought, but you won’t be able to use My Ekomers to keep track of your activity, message other members, or sell your unwanted items.</p>
+                <h4><b>How to buy as a guest on Ekomers</b></h4>
+                <p>Once you’ve found an item you’d like to buy, you can go to checkout to complete your purchase. Here's how:</p>
+                <ol>
+                    <li>Select <b>Buy It Now</b> on the listing.</li>
+                    <li>Select <b>Check out as guest.</b></li>
+                    <li>Fill in your shipping address, email address, and payment information.</li>
+                    <li>Select <b>Confirm and pay.</b></li>
+                </ol>
+                <p>You can buy without an Ekomers account as long as:</p>
+                <ul>
+                    <li>The item costs less than Rp 100.000</li>
+                    <li>The item can be purchased using Buy It Now. If you want to bid on an auction or send a Best Offer to a seller, you’ll need an Ekomers account</li>
+                    <li>You pay for the item using PayPal, credit card, debit card, Apple Pay, or Google Pay</li>
+                </ul>
+                <h4><b>Your guest order confirmation email</b></h4>
+                <p>When you buy an item as a guest, we’ll send you a guest order confirmation email, with the subject line “Order Confirmed”. You'll need this email to view your order details, contact the seller, track your order, or start a return if you need to send your item back.</p>
+                <p>If you can’t find your guest order confirmation email in your inbox, select the button below and we’ll send you a link to your order details.</p>
+            </div>
+            <button class="w3-button w3-btn w3-block w3-left-align color2 opacity90" id="btn2">
+                <h5 class="w3-margin-left"><b>Get faq with an item that hasn't arrived</b>
+                    <i class="fas fa-caret-down w3-right w3-margin-right" id="triangle2"></i>
+                </h5>
+            </button>
+            <div class="w3-container w3-hide tab" id="content2">
+                <h4>If you didn't get your item, you're covered under <a href="#">Ekomers Money Back Guarantee.
+                </a> We'll make sure you either receive the item you ordered, or get your money back.</h4>
+                <div class="borderRed">
+                    <p>High shipping volumes are causing some delays. Please allow extra time after the expected delivery date before contacting the seller to let them know that your item hasn't arrived yet.</p>
+                </div>
+                <h4><b>Check your item's delivery information</b></h4>
+                <p>If your item hasn't arrived yet it may still be in transit, so the first thing to do is to check the delivery information. You can find your order's delivery information in your <a href="#">Purchase history.</a>  You'll be able see the item's expected delivery date, and the address it's being shipped to.</p>
+                <h4><b>What to do if your item is being delivered to the wrong address</b></h4>
+                <p>If the shipping address you provided during checkout is incorrect, select <b>Contact the seller</b> on the order's delivery information page and see if they'll cancel the order. They can then relist the item for you to repurchase with the correct address.</p>
+                <p>If the seller has already shipped the item, they won't be able to change the shipping address. If possible, we recommend trying to collect your package from the original address.</p>
+                <div class="borderRed">
+                    <h4><b>Tip</b></h4>
+                    <p>If your item is showing as delivered, or the estimated delivery date has passed, check with a neighbor in case you weren't home when the package arrived and they took delivery of it for you.</p>
+                </div>
+                <h4><b>Let the seller know your item hasn't arrived</b></h4>
+                <p>If the estimated delivery date for your item has passed, and you still haven't received your item, let the seller know. You have 30 days from the estimated delivery date to inform the seller that you didn't receive your item.</p>
+                <p>If your item hasn't arrived, you're protected by the <a href="#">Ekomers Money Back Guarantee</a> and can ask the seller for a refund. Some sellers may also be able to send you out a replacement item, if they have one.</p>
+            </div>
+            <button class="w3-button w3-btn w3-block w3-left-align color1 opacity90" id="btn3">
+                <h5 class="w3-margin-left"><b>Get faq with a hacked account</b>
+                    <i class="fas fa-caret-down w3-right w3-margin-right" id="triangle3"></i>
+                </h5>
+            </button>
+            <div class="w3-container w3-hide tab" id="content3">
+                <h4><b>If you think someone is trying to take over your account—or already has—we’ll work with you to secure it. For your protection, we may place a temporary hold on your account.</b></h4>
+                <p>Whenever there is suspicious activity related to your account, it’s important to act quickly. If you think your account is compromised, first check whether anyone with access to your account made changes to it or used it to buy or sell.</p>
+                <h4><b>What to do if your account was hacked</b></h4>
+                <p>If your account has been taken over or compromised, the first step is to try to sign in to your account.</p>
+                <h4><b>If you can sign in to your account</b></h4>
+                <p>If you can still sign in, take the following steps:</p>
+                <ol>
+                    <li><a href="#">Change your password</a>immediately.</li>
+                    <li><a href="#">Change your secret questions.</a></li>
+                    <li><a href="#">Verify your contact information and payment details.</a>Check your contact information, your shipping addresses, and your payment information. If anything was changed by the person who took over your account, change it back.</li>
+                    <li>Check your active bids and listings in <a href="">My Ekomers</a> to make sure they’re yours. <a href="">Contact us</a> for faq removing unauthorized bids or listings.</li>
+                </ol>
+                <p>If there’s been no fraudulent activity on your account, you don’t need to contact us.</p>
+                <h4><b>If you can’t sign in to your account</b></h4>
+                <p>If you can’t sign in to your account, <a href="#">contact us</a> immediately.</p>
+                <div class="borderRed">
+                    <h4><b>Tip</b></h4>
+                    <p>If you believe your Ekomers account is compromised, we recommend changing the password on your personal email account as well. Your email account password should be different from your Ekomers password.</p>
+                </div>
+                <h4><b>Signs your account was hacked</b></h4>
+                <p>If your account is compromised, you may notice some or all of the following:</p>
+                <ol>
+                    <li>Changes to your password, contact information, or address details</li>
+                    <li>Bids, offers, or purchases that you didn’t make</li>
+                    <li>Listings that you didn’t create</li>
+                </ol>
+                <p>If someone used your Ekomers account without your permission, you should contact your credit card company and your bank. You may want to file a police report.</p>
+            </div>
+            <button class="w3-button w3-btn w3-block w3-left-align color2 opacity90" id="btn4">
+                <h5 class="w3-margin-left"><b>Get faq if you bought as a guest</b>
+                    <i class="fas fa-caret-down w3-right w3-margin-right" id="triangle4"></i>
+                </h5>
+            </button>
+            <div class="w3-container w3-hide tab" id="content4">
+                <p>If your item hasn’t arrived, has turned up damaged or faulty, or if you just want to return it, let the seller know so they can faq you out. If you’re not able to resolve your issue with the seller, we’re always available to step in and faq.</p>
+                <p>If you don’t have an Ekomers account, or didn’t sign in to your account when you made a purchase, you’re still protected by our <a href="">Ekomers Money Back Guarantee.</a> If the item you bought hasn’t arrived, or if it’s faulty, damaged, or doesn’t match the seller’s description, you can get your money back.</p>
+                <p>If you’ve changed your mind and no longer want the item, you can ask the seller if they’ll accept your return. Most sellers are happy to faq out.</p>
+                <h4><b>Your guest order confirmation email</b></h4>
+                <p>When you buy an item as a guest on Ekomers, we’ll send you an order confirmation email with all your order details. The subject line starts with “Order Confirmed”. If your order hasn’t arrived, or if you need to return it for a refund, you’ll need to use your guest order confirmation email.</p>
+                <p>If you can’t find your guest order confirmation email, select the button below and we’ll send you a link to your order details.</p>
+                <h4><b>Your item hasn’t arrived</b></h4>
+                <p>If your item hasn’t arrived, you’re protected by the Ekomers Money Back Guarantee and can either ask the seller for a refund, or for a replacement item (if they have one).
+                </p>
+                <h4><b>Check when your item is due to arrive</b></h4>
+                <p>The first thing to do is check your item’s estimated delivery date in your order confirmation email. You can also select <b>View order details</b> in your order confirmation email to find out the shipping carrier, any tracking information the seller provided, and your item’s current location. If the estimated delivery date hasn’t passed yet, your order is probably still on its way.</p>
+                <h4><b>Confirm your delivery address</b></h4>
+                <p>It’s a good idea to check that the delivery address you used at checkout is correct. You’ll find the address your order is being sent to in your order confirmation email and on the order details page.</p>
+                <p>If your shipping address is incorrect, select <b>Contact the seller</b> on the order details page and ask the seller if they’ll <a href="">cancel the order.</a> They can then relist the item and you can buy it again with the correct address.</p>
+                <div class="borderRed">
+                    <h4><b>Tip</b></h4>
+                    <p>If the estimated delivery date has passed, and your shipping address is correct, you should check with a neighbor in case you weren’t home when the package arrived and they took delivery of it for you.</p>
+                </div>
+                <h4><b>Let the seller know your item hasn’t arrived</b></h4>
+                <p>If the estimated delivery date for your item has passed, the delivery address is correct, and you still haven’t received your item, let the seller know. Here’s how:</p>
+                <ol>
+                    <li>Open the order confirmation email. The subject line starts with "Order Confirmed".</li>
+                    <li>Select <b>View order details</b> in the body of the email.</li>
+                    <li>Select <b>Contact Seller.</b></li>
+                    <li>Select <b>I haven’t received my item yet.</b></li>
+                    <li>Choose <b>No, I want to contact the seller.</b></li>
+                    <li>Fill in the details and then hit <b>Submit.</b></li>
+                </ol>
+                <p>Once you’ve opened your request, you’ll receive a confirmation email and the seller will have 3 business days to get back to you.</p>
+            </div>
+            <button class="w3-button w3-btn w3-block w3-left-align color1 opacity90" id="btn5">
+                <h5 class="w3-margin-left"><b>Signing up for an Ekomers account</b>
+                    <i class="fas fa-caret-down w3-right w3-margin-right" id="triangle5"></i>
+                </h5>
+            </button>
+            <div class="w3-container w3-hide tab" id="content5">
+                <h4>To sign up for an Ekomers account, all you need is an email address. Once your account is set up, you can buy, sell, and enjoy all the benefits of being an Ekomers member.</h4>
+                <p>You'll be able to use My Ekomers to keep track of your buying and selling activity, send messages to other members, save your favorite searches and sellers, and watch up to 300 items you're thinking about buying.</p>
+                <h4><b>Sign up for an Ekomers account</b></h4>
+                <p>Signing up for an Ekomers account is quick and easy. Use the button below to get started.</p>
+                <a class="w3-btn w3-button color1" href="signUp.html">Sign up for an Ekomers account</a>
+                <br>
+                <div class="borderRed">
+                    <h4><b>Tip</b></h4>
+                    <p>Before you can start buying and selling, you'll need to verify your account. We'll send you an email with instructions on how to do this.</p>
+                </div>
+                <h4><b>Creating an Ekomers account using Facebook</b></h4>
+                <p>If you have a Facebook account, you can use it to create an Ekomers account. Here's how:</p>
+                <ol>
+                    <li>On the <a href="">Registration page</a>, select <b>Continue with Facebook.</b></li>
+                    <li>Sign in to your Facebook account.</li>
+                    <li>Allow Ekomers to access your public profile and email address.</li>
+                    <li>Confirm the email address you want to use for your Ekomers account.</li>
+                    <li>Select <b>Create account.</b></li>
+                </ol>
+                <p>We'll use this information to create an account for you and send you an email to confirm account details. If an Ekomers account already exists with the email address you use for your Facebook account, you'll be prompted to enter your Ekomers password to link your accounts.</p>
+                <h4><b>Creating an Ekomers account using Google</b></h4>
+                <p>If you have a Google account, you can use it to create an Ekomers account. Here's how:</p>
+                <ol>
+                    <li>On the <a href="">Registration page</a>, select <b>Continue with Google.</b></li>
+                    <li>Sign in to your Google account.</li>
+                    <li>Allow Ekomers to access your public profile and email address.</li>
+                    <li>Confirm the email address you want to use for your Ekomers account.</li>
+                    <li>Select <b>Create account.</b></li>
+                </ol>
+                <p>We'll use this information to create an account for you and send you an email to confirm account details. If an Ekomers account already exists with the email address you use for your Google account, you'll be prompted to enter your Ekomers password to link your accounts.</p>
+            </div>
+            <button class="w3-button w3-btn w3-block w3-left-align color2 opacity90" id="btn6">
+                <h5 class="w3-margin-left"><b>Reset your password</b>
+                    <i class="fas fa-caret-down w3-right w3-margin-right" id="triangle6"></i>
+                </h5>
+            </button>
+            <div class="w3-container w3-hide tab" id="content6">
+                <h4>Whether you've simply forgotten your password and need to reset it, or want to make a change for security reasons, it's easy to change your Ekomers password. </h4>
+                <p>We recommend regularly updating your password to faq keep your account secure.</p>
+                <h4>Resetting your password if you've forgotten it</h4>
+                <p>If you've forgotten your password select the <b>Reset your password</b> button below:</p>
+                <a href="forgotPassword.html" class="w3-btn w3-button color1">Reset your password</a>
+                <br>
+                <p>For security, we'll ask you to verify yourself by email or text. If you choose email verification and don't receive a message within 5 minutes, check your spam or junk folders.</p>
+                <h4><b>Changing your password for security reasons</b></h4>
+                <p>If you know your current password and want to change it, select the <b>Change your password</b> button below:</p>
+                <a href="resetPassword.html" class="w3-btn w3-button color1">Change your password</a>
+                <br>
+            </div>
+        </div>
+        <div class="w3-container w3-margin-top">
+            <h3><b>Browse FAQ Articles</b></h3>
+            <div class="w3-row w3-center">
+                <div class="w3-hover-shadow w3-card-2 w3-third w3-margin-left w3-center w3-padding-64" style="width:31%">
+                    <img src="../../img/refund.png" alt="refund" style="width:10%;">
+                    <br>
+                    <h4><b class="unselectable">Returns & Refunds</b></h4>
+                </div>
+                <div class="w3-hover-shadow w3-card-2 w3-third w3-margin-left w3-center w3-padding-64" style="width:31%">
+                    <img src="../../img/delivery.png" alt="refund" style="width:10%;">
+                    <br>
+                    <h4><b class="unselectable">Shipping and Tracking</b></h4>
+                </div>
+                <div class="w3-hover-shadow w3-card-2 w3-third w3-margin-left w3-center w3-padding-64" style="width:31%">
+                    <img src="../../img/trade.png" alt="refund" style="width:10%;">
+                    <br>
+                    <h4><b class="unselectable">Selling</b></h4>
+                </div>
+            </div>
+            <div class="w3-row w3-center w3-margin-top">
+                <div class="w3-hover-shadow w3-card-2 w3-third w3-margin-left w3-center w3-padding-64" style="width:31%">
+                    <img src="../../img/cart.png" alt="refund" style="width:10%;">
+                    <br>
+                    <h4><b class="unselectable">Buying</b></h4>
+                </div>
+                <div class="w3-hover-shadow w3-card-2 w3-third w3-margin-left w3-center w3-padding-64" style="width:31%">
+                    <img src="../../img/account.png" alt="refund" style="width:10%;">
+                    <br>
+                    <h4><b class="unselectable">Account</b></h4>
+                </div>
+                <div class="w3-hover-shadow w3-card-2 w3-third w3-margin-left w3-center w3-padding-64" style="width:31%">
+                    <img src="../../img/invoice.png" alt="refund" style="width:10%;">
+                    <br>
+                    <h4><b class="unselectable">Fees & Invoice</b></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="w3-display-container color1 footer">
+            <div class="w3-content">
+                <div class="w3-center w3-display-middle">
+                    Copyright © 1995-2021 Funtastic. All Rights Reserved. Accessibility, User Agreement, Privacy, Cookies,
+                    Do not sell my personal information and AdChoice
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

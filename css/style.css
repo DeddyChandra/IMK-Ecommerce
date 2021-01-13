@@ -160,7 +160,11 @@ button:focus {
 }
 
 .margin_top-25{
-    margin-top: -25;
+    margin-top: -25px;
+}
+
+.margin_top-30{
+    margin-top: -30px;
 }
 
 br{
@@ -221,16 +225,31 @@ br{
     display: none;
     margin-bottom: -10px;
   }
-.passwordText.weak{
+
+.pass wordText.weak{
     color: #ff4757;
   }
+
 .passwordText.medium{
     color: orange;
   }
+
 .passwordText.strong{
     color: #23ad5c;
   }
   
 .marginLeftRight{
     margin: 0 5px;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.borderRed{
+    border: 2px solid #D61D4E;
+    padding: 10px;
+    margin: 10px 0;
 }
