@@ -85,6 +85,11 @@ button:focus {
 #filter {
     padding: 10%;
     margin: 10%;
+    font-weight: bold;
+}
+
+#filter h2, #filter h3 {
+    font-weight: bold;
 }
 
 .discount {
