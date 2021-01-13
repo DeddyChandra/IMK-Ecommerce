@@ -10,10 +10,33 @@
     <title>Shop</title>
 </head>
 <body>
-    <!--header here-->
-    <div>
+    <div class="w3-border" style="width:100vw;height:92px;position:static;overflow:hidden">
+
+    	<img src="../../img/logo_horizontal.png" class="w3-left w3-margin navimage" style='height:60px'>
+    	<img src="../../img/logo_only.png" class="w3-left w3-margin navimage2" style='height:60px'>
+    	<a href="#" class="w3-button w3-left navbut navgroup1">Home</a>
+		<a href="#" class="w3-button w3-left navbut navgroup1">Shop</a>
+		<a href="#" class="w3-button w3-left navbut navgroup2">About Us</a>
+		<a href="#" class="w3-button w3-left navbut navgroup2">Help</a>
+		<div class="w3-dropdown-hover w3-left header-more" style="position:static">
+	      <button class="w3-button navbut"><span class="navgroup3"> More </span><i class="fa fa-caret-down"></i></button>
+
+	      <div class="w3-dropdown-content w3-bar-block w3-card-4 dropdown-list">
+	        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+	        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+	        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+	      </div>
+	    </div>
+	    <div class="w3-right container-right-nav">
+			<div class="login-container">
+				<a href="login.html" class="w3-button w3-round w3-border w3-right  margin-r-16 color2 padding-lr-32 navlogin" >Sign Up</a>
+				<a href="signUp.html" class="w3-button w3-round  w3-border w3-right  margin-r-16 padding-lr-32 navlogin">Login</a>
+			</div>
+		</div>
+	</div>
+    <div class="w3-center w3-margin">
         <form action="">
-            <input type="text" name="" id="" placeholder="Search">
+            <input type="text" class="w3-padding" name="" id="" placeholder="Search" style="width:80%">
             <input type="submit" class="w3-button w3-round-large color2" value="Search">
         </form>
     </div>
@@ -24,26 +47,27 @@
                 <hr>
                 <h3>CATEGORIES</h3>
                 <div class="w3-left-align">
-                    <input type="checkbox" name="" id=""><br>
-                    <input type="checkbox" name="" id=""><br>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" id="all"> <label for="all">ALL</label><br>
+                    <input type="checkbox" id="toy"> <label for="toy">TOY</label><br>
+                    <input type="checkbox" id="food"> <label for="food">FOOD</label>
+                    <input type="text" class="" name="" id="" placeholder="Search category" style="width:100%">
                 </div>
                 <hr>
                 <h3>PRICE</h3>
-                <input type="text" name="" id="">
+                <input type="number" id="" placeholder="Min price" style="width:100%">
                 <br>to<br>
-                <input type="text" name="" id="">
+                <input type="number" id="" placeholder="Max price" style="width:100%">
                 <hr>
                 <h3>LOCATION</h3>
-                <select name="" id="">
-                    <option value="">Select Location</option>
-                    <option value="">Location 1</option>
-                    <option value="">Location 2</option>
-                    <option value="">Location 3</option>
-                    <option value="">Location 4</option>
-                    <option value="">Location 5</option>
-                    <option value="">Location 6</option>
-                    <option value="">Location 7</option>
+                <select name="" id="" style="width:100%">
+                    <option>Select Location</option>
+                    <option>Location 1</option>
+                    <option>Location 2</option>
+                    <option>Location 3</option>
+                    <option>Location 4</option>
+                    <option>Location 5</option>
+                    <option>Location 6</option>
+                    <option>Location 7</option>
                 </select>
             </div>
         </form>
@@ -55,7 +79,7 @@
             <div class="w3-container w3-padding">
                 <div>Hot Wheels</div>
                 <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
-                <div><i class="fa fa-store">store logo</i> Deddoy Pet Store</div>
+                <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Pet Store</div>
             </div>
         </a>
         <a href="" class="w3-btn w3-card w3-round-large w3-left-align card inlineblock" style="width:28%">
@@ -64,7 +88,7 @@
             <div class="w3-container w3-padding">
                 <div>Hot Wheels</div>
                 <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
-                <div><i class="fa fa-store">store logo</i> Deddoy Pet Store</div>
+                <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Pet Store</div>
             </div>
         </a>
         <a href="" class="w3-btn w3-card w3-round-large w3-left-align card inlineblock" style="width:28%">
@@ -73,7 +97,7 @@
             <div class="w3-container w3-padding">
                 <div>Hot Wheels</div>
                 <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
-                <div><i class="fa fa-store">store logo</i> Deddoy Pet Store</div>
+                <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Pet Store</div>
             </div>
         </a>
         <a href="" class="w3-btn w3-card w3-round-large w3-left-align card inlineblock" style="width:28%">
@@ -82,7 +106,7 @@
             <div class="w3-container w3-padding">
                 <div>Hot Wheels</div>
                 <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
-                <div><i class="fa fa-store">store logo</i> Deddoy Pet Store</div>
+                <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Pet Store</div>
             </div>
         </a>
         <a href="" class="w3-btn w3-card w3-round-large w3-left-align card inlineblock" style="width:28%">
@@ -91,7 +115,7 @@
             <div class="w3-container w3-padding">
                 <div>Hot Wheels</div>
                 <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
-                <div><i class="fa fa-store">store logo</i> Deddoy Pet Store</div>
+                <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Pet Store</div>
             </div>
         </a>
         <a href="" class="w3-btn w3-card w3-round-large w3-left-align card inlineblock" style="width:28%">
@@ -100,7 +124,7 @@
             <div class="w3-container w3-padding">
                 <div>Hot Wheels</div>
                 <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
-                <div><i class="fa fa-store">store logo</i> Deddoy Pet Store</div>
+                <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Pet Store</div>
             </div>
         </a>
         <a href="" class="w3-btn w3-card w3-round-large w3-left-align card inlineblock" style="width:28%">
@@ -109,7 +133,7 @@
             <div class="w3-container w3-padding">
                 <div>Hot Wheels</div>
                 <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
-                <div><i class="fa fa-store">store logo</i> Deddoy Pet Store</div>
+                <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Pet Store</div>
             </div>
         </a>
         <a href="" class="w3-btn w3-card w3-round-large w3-left-align card inlineblock" style="width:28%">
@@ -118,7 +142,7 @@
             <div class="w3-container w3-padding">
                 <div>Hot Wheels</div>
                 <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
-                <div><i class="fa fa-store">store logo</i> Deddoy Pet Store</div>
+                <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Pet Store</div>
             </div>
         </a>
         <a href="" class="w3-btn w3-card w3-round-large w3-left-align card inlineblock" style="width:28%">
@@ -127,7 +151,7 @@
             <div class="w3-container w3-padding">
                 <div>Hot Wheels</div>
                 <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
-                <div><i class="fa fa-store">store logo</i> Deddoy Pet Store</div>
+                <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Pet Store</div>
             </div>
         </a>
         <a href="" class="w3-btn w3-card w3-round-large w3-left-align card inlineblock" style="width:28%">
@@ -136,7 +160,16 @@
             <div class="w3-container w3-padding">
                 <div>Hot Wheels</div>
                 <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
-                <div><i class="fa fa-store">store logo</i> Deddoy Pet Store</div>
+                <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Pet Store</div>
+            </div>
+        </a>
+        <a href="" class="w3-btn w3-card w3-round-large w3-left-align card inlineblock" style="width:28%">
+            <div class="card-img" style="width:100%; height:20vh; background-color:#D61D4E;"></div>
+            <!--<img class="card-img" src="img/img,jpg" alt="item image" style="width:95%">-->
+            <div class="w3-container w3-padding">
+                <div>Hot Wheels</div>
+                <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
+                <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Pet Store</div>
             </div>
         </a>
     </div>
