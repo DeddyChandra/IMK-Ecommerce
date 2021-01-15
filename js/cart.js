@@ -39,9 +39,9 @@ selectAll.onchange = function(){
         check2.checked = false;
         check3.checked = false;
     }
-    checkSelected(check1,itemPrice1,qty1);
-    checkSelected(check2,itemPrice1,qty2);
-    checkSelected(check3,itemPrice1,qty3);
+    checkSelected(check1,itemPrice1,qty1,remove1);
+    checkSelected(check2,itemPrice2,qty2,remove2);
+    checkSelected(check3,itemPrice3,qty3,remove3);
 }
 
 let price = 0;
@@ -61,14 +61,17 @@ subTotal.textContent = formatRupiah((shippingPrice+price),"Rp ");
 
 remove1.onclick = function() {
     item1.className += " w3-hide";
+    qty1.textContent = 0
 }
 
 remove2.onclick = function() {
     item2.className += " w3-hide";
+    qty2.value = 0;
 }
 
 remove3.onclick = function() {
     item3.className += " w3-hide";
+    qty3.value = 0;
 }
 
 price1.textContent = formatRupiah((qty1.value * itemPrice1),"Rp ");
@@ -116,28 +119,30 @@ qty3.onchange = function(){
 }
 
 check1.onchange = function(){
-    checkSelected(check1,itemPrice1,qty1);
+    checkSelected(check1,itemPrice1,qty1,remove1);
 }
 
 check2.onchange = function(){
     console.log(qty2.value);
-    checkSelected(check2,itemPrice2,qty2);
+    checkSelected(check2,itemPrice2,qty2,remove2);
 }
 
 check3.onchange = function(){
-    checkSelected(check3,itemPrice3,qty3);
+    checkSelected(check3,itemPrice3,qty3,remove3);
 }
 
-function checkSelected(check, itemPrice, qty){
+function checkSelected(check, itemPrice, qty, remove){
     if(check.checked == true){
         price += qty.value * itemPrice;
         item += parseInt(qty.value);
         qty.disabled = true;
+        remove.disabled = true;
     }
     else{
         price -= qty.value * itemPrice;
         item -= qty.value;
         qty.disabled = false;
+        remove.disabled = false;
     }
     if(price < 0){
         price = 0;
