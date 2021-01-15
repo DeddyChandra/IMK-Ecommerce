@@ -54,25 +54,31 @@
         </div>
     </head>
 <body>
-    <div class="w3-center w3-margin">
+    <div class="center">
         <form action="">
             <input type="text" class="w3-padding" name="" id="" placeholder="Search" style="width:80%">
             <input type="submit" class="w3-button w3-round-large color2" value="Search">
         </form>
     </div>
-    <div class="w3-container" style="height:300px">
-        <div class="w3-cell w3-center w3-left left-sidebar" style="width:20%">
+    <div class="w3-container center w3-row" style="height:300px">
+        <div class="w3-quarter w3-center w3-left left-sidebar" style="width:20%">
             <div class="inlineblock" style="width:100%; height:30vh; background-color:#D61D4E;"></div>
             <!--<img src="img/img,jpg" alt="item image" style="width:95%">-->
         </div>
         <div class="w3-cell w3-container">
             <form action="">
+                <h2> <b>Hot Wheels</b> </h2>
                 <div><i class="fa fa-map-marker"></i> Batam</div>
                 <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Puppy Store</div>
-                <h2>Hot Wheels</h2>
-                <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
-                <div><input type="number" name="" id="" value="1"></div>
-                <div><input type="submit" class="w3-button w3-round-large color2" value="Beli"></div>
+                
+                <div class="w3-xlarge"><s class="discount w3-large">Rp100.000</s> <span class="price">Rp88.888</span></div>
+                <br>
+                <div>             
+                    <b>Qty : </b>
+                    <input id="qty2" type="number" value="1" min="1" size="10" maxlength="10" style="width: 60px;">
+                </div>
+                <br>
+                <button type="submit" class="w3-button w3-round-large color2">Add to cart</button>
             </form>
         </div>
     </div>
