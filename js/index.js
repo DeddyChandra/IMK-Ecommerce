@@ -84,8 +84,10 @@ let interval;
 function moveLeft(){
   posidx--;
   if(posidx==-classcont.length+1){
-    buttonleft.style.display="none";  
-    buttonleft.textContent='';
+    buttonleft.setAttribute("disabled", "disabled");
+    
+
+
   }
   let targetpos=posidx*216;
   if(interval!=null){
@@ -105,8 +107,8 @@ function moveLeft(){
       clearInterval(interval);
     }
   }
-  buttonright.textContent='>';
-  buttonright.style.display="inline-block";
+ 
+  buttonright.removeAttribute("disabled");
   
   
   
@@ -115,8 +117,8 @@ function moveLeft(){
 function moveRight(){
   posidx++;
   if(posidx==0){
-    buttonright.textContent='';
-    buttonright.style.display="none";  
+   
+    buttonright.setAttribute("disabled", "disabled");
   }
   if(interval!=null){
     clearInterval(interval);
@@ -136,15 +138,15 @@ function moveRight(){
       clearInterval(interval);
     }
   }
-   buttonleft.textContent='<';
-   buttonleft.style.display="inline-block";
+   
+    buttonleft.removeAttribute("disabled");
   
   
 }
 
 if(posidx==0){
-    buttonright.textContent='';
-    buttonright.style.display="none";
+    
+    buttonright.setAttribute("disabled", "disabled");
 }
 
 let btnleft = document.getElementById("buttonleft");
