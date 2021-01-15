@@ -133,16 +133,16 @@ button:focus {
     font-size: 12px;
 }
 .carousel{
-	width:65vw;
+	width:63vw;
 	height:500px;
 	overflow:hidden;
+    margin-left:16px;
 	z-index: 1;
 }
 .imagescar{
 	width:65vw;
 	height:500px;
-    /* margin-left:16px; */
-    margin-right:16px;
+    margin:0;
 	object-fit:cover;
 
 }
