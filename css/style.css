@@ -57,7 +57,14 @@ a{
     text-decoration: underline;
 }
 
+.redA{
+    color:#D61D4E;
+}
 
+.redA:hover{
+    color:#D61D4E !important;
+    text-decoration: underline !important;
+}
 
 .line_behind_text{
     width: 100%; 
@@ -298,5 +305,18 @@ br{
 
 .marginleft_10{
     margin-left: 10px;
+}
+
+.width70{
+    width: 69%;
+    margin-right: 10px;
+}
+
+.width30{
+    width: 30%;
+}
+
+.removeTextDecoration{
+	text-decoration: none !important;
 }
 

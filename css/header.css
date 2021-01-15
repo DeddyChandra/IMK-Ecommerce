@@ -35,6 +35,14 @@
 	margin: 0px !important;
 }
 
+a:hover{
+	text-decoration: none !important;
+}
+
+backgroundRed:hover{
+	background-color: #D61D4E !important;
+}
+
 @media screen and (max-width: 800px){
 	.navgroup2{
 		display:none;

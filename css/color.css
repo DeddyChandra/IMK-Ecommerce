@@ -34,3 +34,11 @@
 .textColor2:hover{
 	color : #D61D4E !important;
 }
+
+.yellowBackground{
+	color: #F9D71C;
+}
+
+.grayBackground{
+	color: gray;
+}
