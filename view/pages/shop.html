@@ -24,18 +24,26 @@
  		<script src="../../lib/jquery-ui/jquery-ui.js"></script>
 		<script>
 		  $( function() {
-		    $( "#slider-range" ).slider({
+
+			$( "#ammountmin" ).val(0);
+			$( "#ammountmax" ).val(100000);
+		  	var select = 
+		  	console.log(select);
+		    var slider=$( "#slider-range" ).slider({
 		      range: true,
 		      min: 0,
-		      max: 500,
-		      values: [ 75, 300 ],
+		      max: 1000000,
+		      values: [ $( "#ammountmin" ).val(), $( "#ammountmax" ).val()],
 		      slide: function( event, ui ) {
-		        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+		       	
+		       	$('#ammountmin').val(ui.values[0]);
+		       	$('#ammountmax').val(ui.values[1]);
 		      }
 		    });
-		    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-		      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-		  } );
+		    console.log(slider);
+		    slider.slider( "value", 2000000 );
+
+		   });
 		</script>
         <title>Shop</title>
         <style>
@@ -92,13 +100,10 @@
                 </div>
                 <hr>
                 <h3>PRICE</h3>
-                <input type="number" id="" placeholder="Min price" style="width:100%">
+                <input type="number" id="ammountmin" placeholder="Min price" style="width:100%">
                 <br>to<br>
-                <input type="number" id="" placeholder="Max price" style="width:100%">
-                <p>
-				  <label for="amount">Price range:</label>
-				  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-				</p>
+                <input type="number" id="ammountmax" placeholder="Max price" style="width:100%">
+                
 				 
 				<div id="slider-range"></div>
                 <hr>

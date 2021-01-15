@@ -300,9 +300,11 @@ br{
     margin-left: 10px;
 }
 
-<<<<<<< HEAD
+
 .backgroundimage {
-    background-image: url("../pink.jpg");
+    background-image: url("../img/pinkbottomleft.jpg");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size:30vw ; 
 }
-=======
->>>>>>> 06f3927a96a0b7d8c8dcd3e86b6b05d9afd7c438
+
