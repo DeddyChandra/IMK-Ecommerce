@@ -141,7 +141,7 @@ button:focus {
 .imagescar{
 	width:65vw;
 	height:500px;
-    margin-left:16px;
+    /* margin-left:16px; */
     margin-right:16px;
 	object-fit:cover;
 
@@ -264,7 +264,7 @@ br{
     margin-bottom: -10px;
   }
 
-.pass wordText.weak{
+.passwordText.weak{
     color: #ff4757;
   }
 
@@ -294,4 +294,8 @@ br{
 
 .alignCenter{
     text-align: center;
+}
+
+.marginleft_10{
+    margin-left: 10px;
 }
