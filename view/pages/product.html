@@ -18,13 +18,36 @@
         <script src="../../js/faq.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            $(function(){
+                let field = document.getElementById("quantity-field");
+                let minus = document.getElementById("button-minus");
+                let plus = document.getElementById("button-plus");
+                minus.addEventListener("click", function() {
+                    if(field.value > 0){
+                        field.value = field.value - 1;
+                    }
+                });
+                plus.addEventListener("click", function() {
+                    field.value = parseInt(field.value) + 1;
+                });
+            });
+        </script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Hot Wheels | Product - Ekomers</title>
+        <title>Hot Wheels | Product</title>
         <style>
             canvas{
                 -moz-user-select: none;
                 -webkit-user-select: none;
                 -ms-user-select: none;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            input[type=number] {
+                -moz-appearance: textfield;
             }
         </style>
         <div class="w3-border" style="width:100vw;height:92px;position:static;overflow:hidden">
@@ -56,8 +79,8 @@
 <body>
     <div class="w3-center w3-margin">
         <form action="">
-            <input type="text" class="w3-padding" name="" id="" placeholder="Search" style="width:80%">
-            <input type="submit" class="w3-button w3-round-large color2" value="Search">
+            <input type="text" class="w3-padding" name="" id="" placeholder="Search" style="width:90%">
+            <input type="submit" class="w3-button w3-round-large color2" value="Search" style="width:9%">
         </form>
     </div>
     <div class="w3-container" style="height:300px">
@@ -71,8 +94,12 @@
                 <div><img src="../../img/market_icon.png" style="width:20px; height:20px"> Deddoy Puppy Store</div>
                 <h2>Hot Wheels</h2>
                 <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
-                <div><input type="number" name="" id="" value="1"></div>
-                <div><input type="submit" class="w3-button w3-round-large color2" value="Beli"></div>
+                <div class="quantity">
+                    <input type="button" value="-" id="button-minus">
+                    <input type="number" step="1" max="" value="1" name="quantity" id="quantity-field">
+                    <input type="button" value="+" id="button-plus">
+                </div>
+                <div><input type="submit" class="w3-button w3-round-large color2" value="Add to Cart"></div>
             </form>
         </div>
     </div>
@@ -92,8 +119,8 @@
         Sed velit dignissim sodales ut eu. Nibh nisl condimentum id venenatis a condimentum vitae. Egestas 
         erat imperdiet sed euismod nisi.
     </div>
-    <h3 class="w3-padding w3-border-top w3-border-bottom">Review</h3>
-    <div class="w3-container">
+    <h3 class="w3-padding w3-border-top w3-border-bottom">REVIEW(S)</h3>
+    <div id="review" class="w3-container">
         <div class="">
             Bang Udin
         </div>

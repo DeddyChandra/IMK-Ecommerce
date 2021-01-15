@@ -51,7 +51,7 @@ let itemPrice2 = 758145
 let itemDiscount2 = 0;
 let itemPrice3 = 160000;
 let itemDiscount3 = 182300;
-let shippingPrice = 178000;
+let shippingPrice = 60000;
 let item = 0;
 
 totalItem.textContent = "Item (" + item + ")";
