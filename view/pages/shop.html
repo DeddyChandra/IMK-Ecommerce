@@ -12,13 +12,31 @@
         <link rel="stylesheet" href="../../css/color.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="icon" href="../../img/logo_only.png">
-
+        <link rel="stylesheet" href="../../lib/jquery-ui/jquery-ui.css">
+  		
         <script src="../../lib/Chart.bundle.js"></script>
         <script src="../../lib/utils.js"></script>
         <script src="../../js/faq.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ 		<script src="../../lib/jquery-ui/jquery-ui.js"></script>
+		<script>
+		  $( function() {
+		    $( "#slider-range" ).slider({
+		      range: true,
+		      min: 0,
+		      max: 500,
+		      values: [ 75, 300 ],
+		      slide: function( event, ui ) {
+		        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+		      }
+		    });
+		    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+		      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+		  } );
+		</script>
         <title>Shop</title>
         <style>
             canvas{
@@ -77,6 +95,12 @@
                 <input type="number" id="" placeholder="Min price" style="width:100%">
                 <br>to<br>
                 <input type="number" id="" placeholder="Max price" style="width:100%">
+                <p>
+				  <label for="amount">Price range:</label>
+				  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+				</p>
+				 
+				<div id="slider-range"></div>
                 <hr>
                 <h3>LOCATION</h3>
                 <select name="" id="" style="width:100%">
