@@ -12,10 +12,10 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-yellow", "");
+    dots[i].className = dots[i].className.replace(" color1", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-yellow";
+  dots[slideIndex-1].className += " color1";
   if(time!=null){
   	clearTimeout(time);
   }
