@@ -74,3 +74,58 @@ var count = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+let isicont = document.getElementById("isicont");
+let posidx=0;
+let pos=0;
+let interval;
+function moveLeft(){
+  posidx--;
+  let targetpos=posidx*216;
+  if(interval!=null){
+    clearInterval(interval);
+  }
+  interval = setInterval(animateLeft,0.1)
+  isicont.style.left=pos;
+  function animateLeft(){
+   
+    if(pos>targetpos){
+      
+      pos-=4;
+      isicont.style.left=pos+'px';
+      
+    }else{
+      isicont.style.left=targetpos+'px';
+      clearInterval(interval);
+    }
+  }
+}
+function moveRight(){
+  posidx++;
+  if(interval!=null){
+    clearInterval(interval);
+  }
+  let targetpos=posidx*216;
+  interval = setInterval(animateRight,0.1)
+  isicont.style.left=pos;
+  function animateRight(){
+   
+    if(pos<targetpos){
+      
+      pos+=4;
+      isicont.style.left=pos+'px';
+      
+    }else{
+      isicont.style.left=targetpos+'px';
+      clearInterval(interval);
+    }
+  }
+}
+
+
+let btnleft = document.getElementById("buttonleft");
+let btnright= document.getElementById("buttonright");
+
+btnleft.addEventListener("click",moveLeft);
+btnright.addEventListener("click",moveRight);
+
