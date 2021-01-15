@@ -76,11 +76,17 @@ var count = setInterval(function() {
 }, 1000);
 
 let isicont = document.getElementById("isicont");
+let classcont=document.getElementsByClassName("contentcar");
+
 let posidx=0;
 let pos=0;
 let interval;
 function moveLeft(){
   posidx--;
+  if(posidx==-classcont.length+1){
+    buttonleft.style.display="none";  
+    buttonleft.textContent='';
+  }
   let targetpos=posidx*216;
   if(interval!=null){
     clearInterval(interval);
@@ -99,9 +105,19 @@ function moveLeft(){
       clearInterval(interval);
     }
   }
+  buttonright.textContent='>';
+  buttonright.style.display="inline-block";
+  
+  
+  
+  
 }
 function moveRight(){
   posidx++;
+  if(posidx==0){
+    buttonright.textContent='';
+    buttonright.style.display="none";  
+  }
   if(interval!=null){
     clearInterval(interval);
   }
@@ -120,8 +136,16 @@ function moveRight(){
       clearInterval(interval);
     }
   }
+   buttonleft.textContent='<';
+   buttonleft.style.display="inline-block";
+  
+  
 }
 
+if(posidx==0){
+    buttonright.textContent='';
+    buttonright.style.display="none";
+}
 
 let btnleft = document.getElementById("buttonleft");
 let btnright= document.getElementById("buttonright");
