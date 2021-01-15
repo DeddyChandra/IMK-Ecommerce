@@ -299,3 +299,7 @@ br{
 .marginleft_10{
     margin-left: 10px;
 }
+
+.backgroundimage {
+    background-image: url("../pink.jpg");
+}
