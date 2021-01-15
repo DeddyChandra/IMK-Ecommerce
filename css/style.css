@@ -13,7 +13,32 @@
 	src: url("../fonts/Roboto-Italic.ttf");
 }
 
+@font-face{
+    font-family: 'BrannbollFS';
+    src: url("../fonts/BrannbollFS_PERSONAL.ttf");
+}
 
+@font-face{
+    font-family: 'BrannbollSS';
+    src: url("../fonts/BrannbollSS_PERSONAL.ttf");
+}
+
+@font-face{
+    font-family: "AladinRegular";
+    src: url("../fonts/aladin.regular.ttf");
+}
+
+.AladinRegular{
+    font-family: AladinRegular;
+}
+
+.BrannbollFS{
+    font-family: BrannbollFS;
+}
+
+.BrannbollSS{
+    font-family: BrannbollSS;
+}
 
 body{
     font-family: Roboto;
@@ -21,6 +46,10 @@ body{
 
 .Roboto_bold{
     font-family: Roboto-Bold;
+}
+
+.Roboto{
+    font-family: Roboto;
 }
 
 a{
@@ -42,6 +71,7 @@ a{
     background:#fff; 
     padding:0 10px; 
 }
+
 
 input:focus,
 select:focus,
@@ -260,4 +290,8 @@ br{
     border: 2px solid #D61D4E;
     padding: 10px;
     margin: 10px 0;
+}
+
+.alignCenter{
+    text-align: center;
 }
