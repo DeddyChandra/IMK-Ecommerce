@@ -81,10 +81,10 @@ let classcont=document.getElementsByClassName("contentcar");
 let posidx=0;
 let pos=0;
 let interval;
-function moveLeft(){
+function moveRight(){
   posidx--;
   if(posidx==-classcont.length+1){
-    buttonleft.setAttribute("disabled", "disabled");
+    buttonright.setAttribute("disabled", "disabled");
     
 
 
@@ -108,17 +108,17 @@ function moveLeft(){
     }
   }
  
-  buttonright.removeAttribute("disabled");
+  buttonleft.removeAttribute("disabled");
   
   
   
   
 }
-function moveRight(){
+function moveLeft(){
   posidx++;
   if(posidx==0){
    
-    buttonright.setAttribute("disabled", "disabled");
+    buttonleft.setAttribute("disabled", "disabled");
   }
   if(interval!=null){
     clearInterval(interval);
@@ -139,14 +139,13 @@ function moveRight(){
     }
   }
    
-    buttonleft.removeAttribute("disabled");
+    buttonright.removeAttribute("disabled");
   
   
 }
 
 if(posidx==0){
-    
-    buttonright.setAttribute("disabled", "disabled");
+  buttonleft.setAttribute("disabled", "disabled");
 }
 
 let btnleft = document.getElementById("buttonleft");
