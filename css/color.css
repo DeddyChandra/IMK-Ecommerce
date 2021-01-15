@@ -26,3 +26,11 @@
 .opacity90{
 	opacity: 90%;
 }
+
+.textColor2{
+	color : #D61D4E !important;
+}
+
+.textColor2:hover{
+	color : #D61D4E !important;
+}

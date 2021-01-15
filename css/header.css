@@ -24,9 +24,16 @@
 	display:none;
 }
 .container-right-nav{
-	position:relative;height:100%; width:253px;
+	position:relative;height:100%; width:270px;
 }
 
+.removeTextDecoration:hover{
+	text-decoration: none;
+}
+
+.removeMargin{
+	margin: 0px !important;
+}
 
 @media screen and (max-width: 800px){
 	.navgroup2{
