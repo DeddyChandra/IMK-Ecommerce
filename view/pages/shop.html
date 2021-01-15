@@ -23,27 +23,26 @@
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
  		<script src="../../lib/jquery-ui/jquery-ui.js"></script>
 		<script>
-		  $( function() {
+            $( function() {
+                $( "#slider-range" ).slider({
+                    range: true,
+                    min: 0,
+                    max: 1000000,
+                    values: [ $('#minprice').val(), $('#maxprice').val()],
+                    slide: function( event, ui ) {
+                        $('#minprice').val(ui.values[0]);
+                        $('#maxprice').val(ui.values[1]);
+                    }
+                });
+                $( "#slider-range" ).slider( "value", 2000000 );
 
-			$( "#ammountmin" ).val(0);
-			$( "#ammountmax" ).val(100000);
-		  	var select = 
-		  	console.log(select);
-		    var slider=$( "#slider-range" ).slider({
-		      range: true,
-		      min: 0,
-		      max: 1000000,
-		      values: [ $( "#ammountmin" ).val(), $( "#ammountmax" ).val()],
-		      slide: function( event, ui ) {
-		       	
-		       	$('#ammountmin').val(ui.values[0]);
-		       	$('#ammountmax').val(ui.values[1]);
-		      }
-		    });
-		    console.log(slider);
-		    slider.slider( "value", 2000000 );
+                var updateSlider = function(){
+                    $( "#slider-range" ).slider("values", [$('#minprice').val(), $('#maxprice').val()]);
+                }
 
-		   });
+                $("#minprice").change(updateSlider);
+                $("#maxprice").change(updateSlider);
+            });
 		</script>
         <title>Shop</title>
         <style>
@@ -100,12 +99,10 @@
                 </div>
                 <hr>
                 <h3>PRICE</h3>
-                <input type="number" id="ammountmin" placeholder="Min price" style="width:100%">
+                <input type="number" id="minprice" placeholder="Min price" style="width:100%">
                 <br>to<br>
-                <input type="number" id="ammountmax" placeholder="Max price" style="width:100%">
-                
-				 
-				<div id="slider-range"></div>
+                <input type="number" id="maxprice" placeholder="Max price" style="width:100%">
+                <div id="slider-range" class="w3-margin"></div>
                 <hr>
                 <h3>LOCATION</h3>
                 <select name="" id="" style="width:100%">
