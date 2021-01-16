@@ -92,6 +92,8 @@ button:focus {
     height:60px;
 }
 
+
+
 .padding-lr-32{
 	padding-right:32px;
 	padding-left:32px;
@@ -194,7 +196,9 @@ button:focus {
 .togglePassword{
     cursor: pointer;
 }
-
+.container-about{
+    display:none;
+}
 .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
