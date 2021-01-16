@@ -331,3 +331,17 @@ br{
     background-size:30vw ; 
 }
 
+#backgroundleftnav{
+    background-image: url("../img/food.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+
+}
+
+#backgroundleftnav1{
+    background-image: url("../img/electronic-gadgets.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:105%;
+}
