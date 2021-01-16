@@ -35,13 +35,19 @@
                     }
                 });
                 $( "#slider-range" ).slider( "value", 2000000 );
+                
+                var minprice = $("#minprice");
+                var maxprice = $("#maxprice");
 
                 var updateSlider = function(){
+                    
                     $( "#slider-range" ).slider("values", [$('#minprice').val(), $('#maxprice').val()]);
+                    minprice.val(addSeparator(minprice.val()));
+                    maxprice.val(addSeparator(maxprice.val()));
                 }
 
-                $("#minprice").change(updateSlider);
-                $("#maxprice").change(updateSlider);
+                minprice.change(updateSlider);
+                maxprice.change(updateSlider);
             });
 		</script>
         <title>Shop</title>
@@ -50,6 +56,11 @@
                 -moz-user-select: none;
                 -webkit-user-select: none;
                 -ms-user-select: none;
+            }
+
+            hr {
+                border-top: 1px solid #ccc;
+                margin: 0;
             }
         </style>
         <div class="w3-border" style="width:100vw;height:92px;position:static;overflow:hidden">
@@ -87,49 +98,71 @@
     </div>
     <div class="w3-cell w3-left left-sidebar" style="width:20%">
         <form action="">
-            <div id="filter" class="w3-container w3-center w3-border w3-round-xlarge">
-                <h2>FILTER</h2>
-                <hr>
-                <h3>CATEGORIES</h3>
-                <div class="w3-left-align">
-                    <input type="checkbox" id="all"> <label for="all">ALL</label><br>
-                    <input type="checkbox" id="toy"> <label for="toy">TOY</label><br>
-                    <input type="checkbox" id="food"> <label for="food">FOOD</label>
-                    <input type="text" class="" name="" id="" placeholder="Search category" style="width:100%">
+            <div id="filter" class="w3-center w3-border w3-round-xlarge">
+                <div>
+                    <h2>FILTER</h2>
                 </div>
                 <hr>
-                <h3>PRICE</h3>
-                <input type="number" id="minprice" placeholder="Min price" style="width:100%">
-                <br>to<br>
-                <input type="number" id="maxprice" placeholder="Max price" style="width:100%">
-                <div id="slider-range" class="w3-margin"></div>
+                <div>
+                    <h3>CATEGORIES</h3>
+                    <div class="w3-left-align">
+                        <input type="checkbox" id="toy"> <label for="toy">TOY</label><br>
+                        <input type="checkbox" id="food"> <label for="food">FOOD</label><br>
+                        <input type="checkbox" id="electronics"> <label for="electronics">ELECTRONICS</label><br>
+                        <input type="checkbox" id="cosmetics"> <label for="cosmetics">COSMETICS</label><br>
+                        <input type="checkbox" id="fashion"> <label for="fashion">FASHION</label><br>
+                        <input type="checkbox" id="health"> <label for="health">HEALTH</label><br>
+                        <input type="checkbox" id="kitchen"> <label for="kitchen">KITCHEN</label><br>
+                        <input type="checkbox" id="hobbies"> <label for="hobbies">HOBBIES</label><br>
+                        <input type="checkbox" id="other"> <label for="other">OTHER...</label><br>
+                        <input type="text" class="" name="" id="" placeholder="Search category.." style="width:100%">
+                    </div>
+                </div>
                 <hr>
-                <h3>LOCATION</h3>
-                <select name="" id="" style="width:100%">
-                    <option>Select Location</option>
-                    <option>Location 1</option>
-                    <option>Location 2</option>
-                    <option>Location 3</option>
-                    <option>Location 4</option>
-                    <option>Location 5</option>
-                    <option>Location 6</option>
-                    <option>Location 7</option>
-                </select>
+                <div>
+                    <h3>PRICE</h3>
+                    <label for="minprice">Rp</label> <input type="number" id="minprice" placeholder="Min price" style="width:80%">
+                    <br>to<br>
+                    <label for="maxprice">Rp</label> <input type="number" id="maxprice" placeholder="Max price" style="width:80%">
+                    <div id="slider-range" class="w3-margin"></div>
+                    <div>
+                        <span class="w3-left">0</span>
+                        <span class="w3-right">10.000.000</span>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h3>LOCATION</h3>
+                    <div class="w3-left-align">
+                        <input type="checkbox" id="jakarta"> <label for="jakarta">Jakarta</label><br>
+                        <input type="checkbox" id="bandung"> <label for="bandung">Bandung</label><br>
+                        <input type="checkbox" id="batam"> <label for="batam">Batam</label><br>
+                        <input type="checkbox" id="padang"> <label for="padang">Padang</label><br>
+                        <input type="checkbox" id="medan"> <label for="medan">Medan</label><br>
+                        <input type="checkbox" id="denpasar"> <label for="denpasar">Denpasar</label><br>
+                        <input type="checkbox" id="pontianak"> <label for="pontianak">Pontianak</label><br>
+                        <input type="checkbox" id="makassar"> <label for="makassar">Makassar</label><br>
+                        <input type="checkbox" id="surabaya"> <label for="surabaya">Surabaya</label><br>
+                        <input type="checkbox" id="semarang"> <label for="semarang">Semarang</label><br>
+                        <input type="checkbox" id="other"> <label for="other">Other...</label><br>
+                        <input type="text" class="" name="" id="" placeholder="Search location.." style="width:100%">
+                    </div>
+                </div>
             </div>
         </form>
     </div>
     <div class="w3-cell w3-container w3-center" style="max-width: 80%;">
-        <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
+        <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
             <div class="card-img w3-grey" style="width:100%; background-color:w3;">
                 <img class="w3-block" src="../../img/products/razer.jpg" alt="" width="100%"></div>
             
             <div class="w3-container w3-padding">
                 <b>Razer Viper Ultimate Hyperspeed</b>
-                <div><span class="">Rp 1932619.22</span></div>
+                <div><span class="">Rp 1.932.619.22</span></div>
                 <div><img src="../../img/market_icon.png" style="width:20px; height:20px;  margin:-5px 0px 0px 0px"> Singapore Razer</div>
             </div>
         </a>
-        <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
+        <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
             <div class="card-img w3-grey" style="width:100%; background-color:w3;">
                 <img class="w3-block" src="../../img/products/oppoPhone.jpg" alt="" width="100%"></div>
             <div class="w3-container w3-padding">
@@ -138,7 +171,7 @@
                 <div><img src="../../img/market_icon.png" style="width:20px; height:20px;  margin:-5px 0px 0px 0px"> Oppo</div>
             </div>
         </a>
-        <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
+        <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
             <div class="card-img w3-grey" style="width:100%; background-color:w3;">
                 <img class="w3-block" src="../../img/products/headset2.jpg" alt="" width="100%"></div>
             
@@ -148,7 +181,7 @@
                 <div><img src="../../img/market_icon.png" style="width:20px; height:20px;  margin:-5px 0px 0px 0px"> Srhythm</div>
             </div>
         </a>
-        <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
+        <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
             <div class="card-img w3-grey" style="width:100%; background-color:w3;">
                 <img class="w3-block" src="../../img/products/drone.jpg" alt="" width="100%"></div>
             <div class="w3-container w3-padding">
@@ -157,7 +190,7 @@
                 <div><img src="../../img/market_icon.png" style="width:20px; height:20px;  margin:-5px 0px 0px 0px"> Snaptain Drone</div>
             </div>
         </a>
-        <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card" style="width:28%">
+        <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card" style="width:28%">
             <div class="card-img w3-grey" style="width:100%; background-color:w3;">
                 <img class="w3-block" src="../../img/products/mascara.jpg" alt="" width="100%"></div>
             <div class="w3-padding">
@@ -166,7 +199,7 @@
                 <div><img src="../../img/market_icon.png" style="width:20px; height:20px; margin:-5px 0px 0px 0px"> Maxlash</div>
             </div>
         </a>
-        <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
+        <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
             <div class="card-img w3-grey" style="width:100%; background-color:w3;">
                 <img class="w3-block" src="../../img/products/headset.jpg" alt="" width="100%"></div>
             <div class="w3-container w3-padding">
@@ -175,7 +208,7 @@
                 <div><img src="../../img/market_icon.png" style="width:20px; height:20px; margin:-5px 0px 0px 0px"> Mivi</div>
             </div>
         </a>
-        <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
+        <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
             <div class="card-img w3-grey" style="width:100%; background-color:w3;">
                 <img class="w3-block" src="../../img/products/dettol.jpg" alt="" width="100%"></div>
             <div class="w3-container w3-padding">
@@ -184,7 +217,7 @@
                 <div><img src="../../img/market_icon.png" style="width:20px; height:20px;  margin:-5px 0px 0px 0px"> Dettol</div>
             </div>
         </a>
-        <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
+        <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
             <div class="card-img w3-grey" style="width:100%; background-color:w3;">
                 <img class="w3-block" src="../../img/products/dairyMilk.jpg" alt="" width="100%"></div>
             <div class="w3-container w3-padding">
@@ -193,7 +226,7 @@
                 <div><img src="../../img/market_icon.png" style="width:20px; height:20px;  margin:-5px 0px 0px 0px"> Dairy Milk</div>
             </div>
         </a>
-        <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
+        <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
             <div class="card-img w3-grey" style="width:100%; background-color:w3;">
                 <img class="w3-block" src="../../img/products/dumbbell.jpg" alt="" width="100%"></div>
             <div class="w3-container w3-padding">
@@ -202,7 +235,7 @@
                 <div><img src="../../img/market_icon.png" style="width:20px; height:20px;  margin:-5px 0px 0px 0px"> Kakss</div>
             </div>
         </a>
-        <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
+        <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
             <div class="card-img w3-grey" style="width:100%; background-color:w3;">
                 <img class="w3-block" src="../../img/products/speaker.jpg" alt="" width="100%"></div>
             <div class="w3-container w3-padding">
@@ -211,7 +244,7 @@
                 <div><img src="../../img/market_icon.png" style="width:20px; height:20px;  margin:-5px 0px 0px 0px"> Zebronics</div>
             </div>
         </a>
-        <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
+        <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock" style="width:28%">
             <div class="card-img w3-grey" style="width:100%; background-color:w3;">
                 <img class="w3-block" src="../../img/products/mixers.jpg" alt="" width="100%"></div>
             <div class="w3-container w3-padding">
