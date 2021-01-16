@@ -20,11 +20,11 @@ $(function(){
     let minus = document.getElementById("button-minus");
     let plus = document.getElementById("button-plus");
     let discount = document.getElementById("discount");
-    discount.textContent = "Rp 100.000,00";
+    discount.textContent = "Rp 1.063.116,00";
     let price = document.getElementById("price");
-    price.textContent = "Rp 88.888,00";
-    let dp = 100000;
-    let p = 88888;
+    price.textContent = "Rp 903.632,00";
+    let dp = 1063116;
+    let p = 903632;
     minus.addEventListener("click", function() {
         if(field.value > 1){
             field.value = field.value - 1;

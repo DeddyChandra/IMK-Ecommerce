@@ -45,12 +45,12 @@ selectAll.onchange = function(){
 }
 
 let price = 0;
-let itemPrice1 = 88888;
-let itemDiscount1 = 100000;
+let itemPrice1 = 903632;
+let itemDiscount1 = 1063116;
 let itemPrice2 = 758145
 let itemDiscount2 = 0;
-let itemPrice3 = 160000;
-let itemDiscount3 = 182300;
+let itemPrice3 = 12700000;
+let itemDiscount3 = 13000000;
 let shippingPrice = 60000;
 let item = 0;
 
@@ -61,7 +61,7 @@ subTotal.textContent = formatRupiah((shippingPrice+price),"Rp ");
 
 remove1.onclick = function() {
     item1.className += " w3-hide";
-    qty1.textContent = 0
+    qty1.value = 0
 }
 
 remove2.onclick = function() {
