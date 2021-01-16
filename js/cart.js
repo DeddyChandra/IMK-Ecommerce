@@ -61,7 +61,7 @@ subTotal.textContent = formatRupiah((shippingPrice+price),"Rp ");
 
 remove1.onclick = function() {
     item1.className += " w3-hide";
-    qty1.textContent = 0
+    qty1.value = 0
 }
 
 remove2.onclick = function() {
