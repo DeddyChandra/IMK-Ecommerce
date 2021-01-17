@@ -466,3 +466,7 @@ br{
 .removeMarginTop{
     margin-top: 0px !important;
 }
+
+.breadcumb a{
+    color: #337ab7 !important;
+}
