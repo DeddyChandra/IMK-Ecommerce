@@ -45,19 +45,19 @@ selectAll.onchange = function(){
 }
 
 let price = 0;
-let itemPrice1 = 903632;
-let itemDiscount1 = 1063116;
-let itemPrice2 = 758145
+let itemPrice1 = 903;
+let itemDiscount1 = 1063;
+let itemPrice2 = 758;
 let itemDiscount2 = 0;
-let itemPrice3 = 12700000;
-let itemDiscount3 = 13000000;
-let shippingPrice = 60000;
+let itemPrice3 = 12700;
+let itemDiscount3 = 13000;
+let shippingPrice = 60;
 let item = 0;
 
 totalItem.textContent = "Item (" + item + ")";
-totalPrice.textContent = "Rp 0,00";
-shipping.textContent = formatRupiah((shippingPrice),"Rp ");
-subTotal.textContent = formatRupiah((shippingPrice+price),"Rp ");
+totalPrice.textContent = "Rp 0.00";
+shipping.textContent = formatRupiah((shippingPrice),"$ ");
+subTotal.textContent = formatRupiah((shippingPrice+price),"$ ");
 
 remove1.onclick = function() {
     item1.className += " w3-hide";
@@ -74,13 +74,13 @@ remove3.onclick = function() {
     qty3.value = 0;
 }
 
-price1.textContent = formatRupiah((qty1.value * itemPrice1),"Rp ");
-discount1.textContent = formatRupiah((qty1.value * itemDiscount1),"Rp ");
+price1.textContent = formatRupiah((qty1.value * itemPrice1),"$ ");
+discount1.textContent = formatRupiah((qty1.value * itemDiscount1),"$ ");
 
-price2.textContent = formatRupiah((qty1.value * itemPrice2),"Rp ");
+price2.textContent = formatRupiah((qty1.value * itemPrice2),"$ ");
 
-price3.textContent = formatRupiah((qty1.value * itemPrice3),"Rp ");
-discount3.textContent = formatRupiah((qty1.value * itemDiscount3),"Rp ");
+price3.textContent = formatRupiah((qty1.value * itemPrice3),"$ ");
+discount3.textContent = formatRupiah((qty1.value * itemDiscount3),"$ ");
 
 /* Fungsi formatRupiah */
 function formatRupiah(angka, prefix){
@@ -92,30 +92,30 @@ function formatRupiah(angka, prefix){
  
 	// tambahkan titik jika yang di input sudah menjadi angka ribuan
 	if(ribuan){
-		separator = sisa ? '.' : '';
-		rupiah += separator + ribuan.join('.');
+		separator = sisa ? ',' : '';
+		rupiah += separator + ribuan.join(',');
 	}
  
 	rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
-	return prefix == undefined ? rupiah : (rupiah ? 'Rp  ' + rupiah + ',00' : '');
+	return prefix == undefined ? rupiah : (rupiah ? '$  ' + rupiah + '.00' : '');
 }
 
 
 qty1.onchange = function(){
     totalPrice1 = qty1.value * itemPrice1;
-    price1.textContent = formatRupiah(totalPrice1,"Rp ");
-    discount1.textContent = formatRupiah((qty1.value * itemDiscount1),"Rp ");
+    price1.textContent = formatRupiah(totalPrice1,"$ ");
+    discount1.textContent = formatRupiah((qty1.value * itemDiscount1),"$ ");
 }
 
 qty2.onchange = function(){
     totalPrice2 = qty2.value * itemPrice2;
-    price2.textContent = formatRupiah(totalPrice2,"Rp ");
+    price2.textContent = formatRupiah(totalPrice2,"$ ");
 }
 
 qty3.onchange = function(){
     totalPrice3 = qty3.value * itemPrice3;
-    price3.textContent = formatRupiah(totalPrice3,"Rp ");
-    discount3.textContent = formatRupiah((qty3.value * itemDiscount3),"Rp ");
+    price3.textContent = formatRupiah(totalPrice3,"$ ");
+    discount3.textContent = formatRupiah((qty3.value * itemDiscount3),"$ ");
 }
 
 check1.onchange = function(){
@@ -151,7 +151,7 @@ function checkSelected(check, itemPrice, qty, remove){
         item = 0;
     }
     totalItem.textContent = "Item (" + item + ")";
-    totalPrice.textContent = formatRupiah(price,"Rp ");
-    subTotal.textContent = formatRupiah((price + shippingPrice), "Rp ")
+    totalPrice.textContent = formatRupiah(price,"$ ");
+    subTotal.textContent = formatRupiah((price + shippingPrice), "$ ")
 }
 
