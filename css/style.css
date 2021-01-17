@@ -348,6 +348,12 @@ br{
     color:white !important;
 
 }
+#backgroundleftnav:hover{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/food.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:120%;
+}
 
 #backgroundleftnav1{
     
@@ -358,6 +364,12 @@ br{
     color:white !important;
 }
 
+#backgroundleftnav1:hover{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/electronic-gadgets.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:120%;
+}
 #backgroundleftnav2{
     
     background-image: url("../img/fashion.jpg");
@@ -367,6 +379,12 @@ br{
     color:white !important;
 }
 
+#backgroundleftnav2:hover{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/fashion.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:120%;
+}
 #backgroundleftnav3{
     
     background-image: url("../img/item.jpg");
@@ -376,11 +394,21 @@ br{
     color:white !important;
 }
 
+#backgroundleftnav3:hover{
+    
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/item.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:120%;
+    
+}
 
 
 .txt{
     background-color:white;
     color:black;
+    padding:1vw;
+    border-radius:8px;
 }
 
 .visited{
