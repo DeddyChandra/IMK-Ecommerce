@@ -352,7 +352,7 @@ br{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/food.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size:105%;
+    background-size:120%;
 }
 
 #backgroundleftnav1{
@@ -368,7 +368,7 @@ br{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/electronic-gadgets.jpeg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size:105%;
+    background-size:120%;
 }
 #backgroundleftnav2{
     
@@ -383,7 +383,7 @@ br{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/fashion.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size:105%;
+    background-size:120%;
 }
 #backgroundleftnav3{
     
@@ -399,7 +399,7 @@ br{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/item.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size:105%;
+    background-size:120%;
     
 }
 
