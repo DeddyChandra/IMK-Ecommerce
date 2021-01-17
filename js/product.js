@@ -1,18 +1,8 @@
 function formatRupiah(angka, prefix){
-	var number_string = angka.toString(),
-	split   		= number_string.split(','),
-	sisa     		= split[0].length % 3,
-	rupiah     		= split[0].substr(0, sisa),
-	ribuan     		= split[0].substr(sisa).match(/\d{3}/gi);
- 
-	// tambahkan titik jika yang di input sudah menjadi angka ribuan
-	if(ribuan){
-		separator = sisa ? '.' : '';
-		rupiah += separator + ribuan.join('.');
-	}
- 
-	rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
-	return prefix == undefined ? rupiah : (rupiah ? 'Rp  ' + rupiah + ',00' : '');
+	
+	return new Intl.NumberFormat('en-US',
+      { style: 'currency', currency: 'USD' }
+    ).format(angka);
 }
 
 $(function(){
@@ -20,21 +10,21 @@ $(function(){
     let minus = document.getElementById("button-minus");
     let plus = document.getElementById("button-plus");
     let discount = document.getElementById("discount");
-    discount.textContent = "Rp 1.063.116,00";
+    discount.textContent = "$ 106.31";
     let price = document.getElementById("price");
-    price.textContent = "Rp 903.632,00";
-    let dp = 1063116;
-    let p = 903632;
+    price.textContent = "$ 90.36";
+    let dp = 106.31;
+    let p = 90.36;
     minus.addEventListener("click", function() {
         if(field.value > 1){
             field.value = field.value - 1;
-            price.textContent = formatRupiah((field.value * p), "Rp ");
-            discount.textContent = formatRupiah((field.value * dp), "Rp ");
+            price.textContent = formatRupiah((field.value * p), "$ ");
+            discount.textContent = formatRupiah((field.value * dp), "$ ");
         }
     });
     plus.addEventListener("click", function() {
         field.value = parseInt(field.value) + 1;
-        discount.textContent = formatRupiah((field.value * dp), "Rp ");
-        price.textContent = formatRupiah((field.value * p), "Rp ");
+        discount.textContent = formatRupiah((field.value * dp), "$ ");
+        price.textContent = formatRupiah((field.value * p), "$ ");
     });
 });
