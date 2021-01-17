@@ -31,14 +31,13 @@
                 $( "#slider-range" ).slider({
                     range: true,
                     min: 0,
-                    max: 1000000,
+                    max: 1000,
                     values: [ $('#minprice').val(), $('#maxprice').val()],
                     slide: function( event, ui ) {
                         $('#minprice').val(ui.values[0]);
                         $('#maxprice').val(ui.values[1]);
                     }
                 });
-                $( "#slider-range" ).slider( "value", 2000000 );
                 
                 var minprice = $("#minprice");
                 var maxprice = $("#maxprice");
@@ -126,13 +125,13 @@
                 <hr>
                 <div>
                     <h3>PRICE</h3>
-                    <label for="minprice">$</label> <input type="number" id="minprice" placeholder="Min price" style="width:80%">
+                    <label for="minprice">$</label> <input type="number" id="minprice" placeholder="Min price" style="width:100px">
                     <br>to<br>
-                    <label for="maxprice">$</label> <input type="number" id="maxprice" placeholder="Max price" style="width:80%">
+                    <label for="maxprice">$</label> <input type="number" id="maxprice" placeholder="Max price" style="width:100px">
                     <div id="slider-range" class="w3-margin"></div>
                     <div>
                         <span class="w3-left">0</span>
-                        <span class="w3-right">10.000.000</span>
+                        <span class="w3-right">1.000</span>
                     </div>
                 </div>
                 <hr>
