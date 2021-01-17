@@ -8,7 +8,7 @@
     padding-top:0;
     padding-bottom:0;
     line-height:92px;
-    height:92px;
+    height:100%;
     vertical-align:middle;
 }
 .dropdown-list{
@@ -90,5 +90,20 @@ backgroundRed:hover{
 	.container-right-nav{
 		width:155px;
 	}
+
+}
+
+.sticky {
+	//background-color: red;
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index:100;
+    background-color: white; 
+}
+
+.navigationcontainer{
+	width:100vw;height:92px;position:static;
 
 }

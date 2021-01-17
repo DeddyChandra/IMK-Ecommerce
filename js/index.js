@@ -154,3 +154,6 @@ let btnright= document.getElementById("buttonright");
 btnleft.addEventListener("click",moveLeft);
 btnright.addEventListener("click",moveRight);
 
+
+
+
