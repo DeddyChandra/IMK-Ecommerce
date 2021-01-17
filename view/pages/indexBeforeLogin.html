@@ -27,7 +27,9 @@
             -ms-user-select: none;
         }
     </style>
-    <div class="w3-border" style="width:100vw;height:92px;position:static;overflow:hidden">
+    <div class="w3-border " style="width:100vw;height:92px;position:static" ></div>
+    
+    <div class="w3-border  sticky" style="width:100vw;height:92px;" >
         
         <a href="indexBeforeLogin.html"><img  src="../../img/logo_horizontal.png" class="w3-left w3-margin navimage" style='height:60px'></a>
         <a href="indexBeforeLogin.html"><img src="../../img/logo_only.png" class="w3-left w3-margin navimage2" style='height:60px'></a>
@@ -53,21 +55,22 @@
         </div>
     </div>
 </head>
-<body style="margin:0 ;width:100vw;">
+<body style="margin:0">
     <div class="w3-center w3-margin">
         <form action="">
-            <input type="text" class="w3-padding" name="" id="" placeholder="Search" style="width:80%">
-            <input type="submit" class="w3-button w3-round-large color2" value="Search">
+            <input type="text" class="w3-padding" name="" id="" placeholder="Search" style="width:90%">
+            <input type="submit" class="w3-button w3-round-large color2" value="Search" style="width:9%">
         </form>
     </div>
-    <div style="width:65vw;height:532px; " class="w3-left">
-        <div class='w3-display-container carousel w3-section w3-hover-shadow w3-round-xlarge'  >
-            <img src="../../img/ecommerce1.jpg" class="w3-display-middle imagescar ">
-            <img src="../../img/ecommerce2.jpg" class="w3-display-middle imagescar ">
-            <img src="../../img/ecommerce3.jpg" class="w3-display-middle imagescar ">
-            <img src="../../img/ecommerce4.jpg" class="w3-display-middle imagescar ">
-            <img src="../../img/ecommerce5.jpg" class="w3-display-middle imagescar ">
-            <img src="../../img/ecommerce6.jpg" class="w3-display-middle imagescar ">
+    
+    <div style="width:65%;height:532px; " class="w3-left w3-padding">
+        <div style="width:100%;height:100%;margin:0!important"class='w3-left carousel w3-section w3-hover-shadow w3-round-xlarge'  >
+            <img src="../../img/ecommerce1.jpg" style="height:100%" class="imagescar w3-left ">
+            <img src="../../img/ecommerce2.jpg" style="height:100%" class="imagescar w3-left ">
+            <img src="../../img/ecommerce3.jpg" style="height:100%" class=" imagescar  w3-left">
+            <img src="../../img/ecommerce4.jpg" style="height:100%" class=" imagescar  w3-left">
+            <img src="../../img/ecommerce5.jpg" style="height:100%" class="imagescar w3-left">
+            <img src="../../img/ecommerce6.jpg" style="height:100%"class="imagescar w3-left">
 
             <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle unselectable" style="width:100%">
             <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="showDivs(1)"></span>
@@ -79,17 +82,17 @@
             </div>
         </div>
     </div>
-    <div class=' w3-left padding-16' style ="width:35vw;height:532px">
+    <div class=' w3-left padding-16' style ="width:35%;height:532px">
         <ul style="list-style: none ; padding-left:0 ">
-            <li class="margin-bottom-16"><a href="default.asp" class="w3-button color1 w3-block w3-round-large" style="height:113px">Home</a></li>
-            <li class="margin-bottom-16"><a href="news.asp" class="w3-button color1 w3-block w3-round-large" style="height:113px">Shop</a></li>
-            <li class="margin-bottom-16"><a href="contact.asp" class="w3-button color1 w3-block w3-round-large" style="height:113px">About Us</a></li>
-            <li><a href="about.asp" class="w3-button color1 w3-block w3-round-large" style="height:113px">FAQ</a></li>
+            <li class="margin-bottom-16"><a href="" class="w3-border w3-button w3-block w3-round-large w3-left-align " id ="backgroundleftnav" style="height:113px ;line-height:113px"><span class="w3-large txt">Food</span></a></li>
+            <li class="margin-bottom-16"><a href="" class="w3-border w3-button w3-block w3-round-large w3-left-align" id ="backgroundleftnav1" style="height:113px;line-height:113px"><span class="w3-large txt">Electronic</span></a></li>
+            <li class="margin-bottom-16"><a href="" class="w3-border w3-button w3-block w3-round-large w3-left-align " id ="backgroundleftnav2" style="height:113px;line-height:113px"><span class="w3-large txt">Fashion</span></a></li>
+            <li><a href="about.asp" class="w3-border w3-button color1 w3-block w3-round-large w3-left-align" id ="backgroundleftnav3" style="height:113px ;line-height:113px"><span class="w3-large txt">More</span></a></li>
         </ul>
     </div>
-    <br>
     
-    <span class="fa fa-clock " style="padding-left:16px">
+
+    <span class="fa fa-clock-o " style="padding-left:16px">
         
     </span>
     Flash Sale: 
@@ -111,105 +114,106 @@
     
     <br>
     <br>
-    <div class='w3-left w3-round-large w3-border' style="width:98vw;height:216px ;overflow:hidden;margin:1vw;box-sizing:content-box">
+    <div class='w3-left w3-round-large w3-border' style="width:98vw;height:280px ;overflow:hidden;margin:1vw;box-sizing:content-box">
 
         <!--button-->
-        <div class='w3-left w3-center' style="width:9vw ;height:216px;line-height:216px ">
-            <div class='w3-button  w3-circle' id ="buttonleft"style="width:100px;height:100px;line-height:90px;vertical-align: middle">
+        <div class='w3-left w3-center' style="width:9vw ;height:260px;line-height:260px ">
+            <button class='w3-button  w3-circle' id ="buttonleft"style="width:7vw;height:7vw;line-height:6.5vw;vertical-align: middle">
                 <
-            </div>
+            </button>
         </div>
          <!--container-->
-        <div class='w3-left ' style ="width:80vw;height:216px;overflow:hidden;position:relative;margin:0">
+        <div class='w3-left ' style ="width:80vw;height:280px;overflow:hidden;position:relative;margin:0">
             <!--isi-->
             <div class="w3-left" id="isicont" style="width:500vw;position:absolute; left:0px">
-                <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left" style="width:150px;height:200px">
-                    <div class="card-img" style="width:100%; height:150px; background-color:#D61D4E;"></div>
-                    <!--<img class="card-img" src="img/img,jpg" alt="item image" style="width:95%">-->
+                <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left contentcar" style="width:150px;height:260px">
+                    <div class="card-img w3-grey" style="width:100%; height:200px; overflow: hidden">
+                        <img class="card-img" src="../../img/products/oppoPhone.jpg" alt="item image" style="width:100%">
+                    </div>
                     <div class="w3-container w3-padding">
-                        <div>Hot Wheels</div>
-                        <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
+                        <b>OPPO F17 Pro (Metallic White)</b>
+                        <div><s class="discount">$ 50.30</s> <span class="price">$ 415.94</span></div>
                     </div>
                 </a>
-                <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock w3-left" style="width:150px;height:200px">
-                    <div class="card-img" style="width:100%; height:150px; background-color:#D61D4E;"></div>
-                    <!--<img class="card-img" src="img/img,jpg" alt="item image" style="width:95%">-->
+                <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left contentcar" style="width:150px;height:260px">
+                    <div class="card-img w3-grey" style="width:100%; height:200px; overflow: hidden">
+                        <img class="card-img" src="../../img/products/headset2.jpg" alt="item image" style="width:100%">
+                    </div>
                     <div class="w3-container w3-padding">
-                        <div>Hot Wheels</div>
-                        <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
+                        <b>Noise Cancelling Headphones Bluetooth</b>
+                <div><s class="discount">$ 106.31</s> <span class="price">$ 90.63</span></div>
                     </div>
                 </a>
-                <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left" style="width:150px;height:200px">
-                    <div class="card-img" style="width:100%; height:150px; background-color:#D61D4E;"></div>
-                    <!--<img class="card-img" src="img/img,jpg" alt="item image" style="width:95%">-->
+                <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left contentcar" style="width:150px;height:260px">
+                    <div class="card-img w3-grey" style="width:100%; height:200px; overflow: hidden">
+                        <img class="card-img" src="../../img/products/mascara.jpg" alt="item image" style="width:100%">
+                    </div>
                     <div class="w3-container w3-padding">
-                        <div>Hot Wheels</div>
-                        <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
+                        <b>Lotus Herbals Botanical Mascara | 4g.</b>
+                        <div><s class="discount">$ 5.70</s> <span class="price">$ 4.06</span></div>
                     </div>
                 </a>
-                <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left" style="width:150px;height:200px">
-                    <div class="card-img" style="width:100%; height:150px; background-color:#D61D4E;"></div>
-                    <!--<img class="card-img" src="img/img,jpg" alt="item image" style="width:95%">-->
+                <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left contentcar" style="width:150px;height:260px">
+                    <div class="card-img w3-grey" style="width:100%; height:200px; overflow: hidden">
+                        <img class="card-img" src="../../img/products/headset.jpg" alt="item image" style="width:100%">
+                    </div>
                     <div class="w3-container w3-padding">
-                        <div>Hot Wheels</div>
-                        <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
+                        <b>Mivi Collar 2B Wireless Earphones.</b>
+                        <div><s class="discount">$ 58.00</s> <span class="price">$ 23.20</span></div>
                     </div>
                 </a>
-                <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left" style="width:150px;height:200px">
-                    <div class="card-img" style="width:100%; height:150px; background-color:#D61D4E;"></div>
-                    <!--<img class="card-img" src="img/img,jpg" alt="item image" style="width:95%">-->
+                <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left contentcar" style="width:150px;height:260px">
+                    <div class="card-img w3-grey" style="width:100%; height:200px; overflow: hidden">
+                        <img class="card-img" src="../../img/products/dettol.jpg" alt="item image" style="width:100%">
+                    </div>
                     <div class="w3-container w3-padding">
-                        <div>Hot Wheels</div>
-                        <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
+                        <b>Dettol Original Germ Protection Sanitizer</b>
+                        <div><s class="discount">$ 4.83</s> <span class="price">$ 3.87</span></div>
                     </div>
                 </a>
-                <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left" style="width:150px;height:200px">
-                    <div class="card-img" style="width:100%; height:150px; background-color:#D61D4E;"></div>
-                    <!--<img class="card-img" src="img/img,jpg" alt="item image" style="width:95%">-->
+                <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left contentcar" style="width:150px;height:260px">
+                    <div class="card-img w3-grey" style="width:100%; height:200px; overflow: hidden">
+                        <img class="card-img" src="../../img/products/dairyMilk.jpg" alt="item image" style="width:100%">
+                    </div>
                     <div class="w3-container w3-padding">
-                        <div>Hot Wheels</div>
-                        <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
+                        <b>Cadbury Dairy Milk Silk Chocolate Bar</b>
+                        <div><s class="discount">$ 6.19</s> <span class="price">$ 5.03</span></div>
                     </div>
                 </a>
-                <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left" style="width:150px;height:200px">
-                    <div class="card-img" style="width:100%; height:150px; background-color:#D61D4E;"></div>
-                    <!--<img class="card-img" src="img/img,jpg" alt="item image" style="width:95%">-->
+                <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left contentcar" style="width:150px;height:260px">
+                    <div class="card-img w3-grey" style="width:100%; height:200px; overflow: hidden">
+                        <img class="card-img" src="../../img/products/dumbbell.jpg" alt="item image" style="width:100%">
+                    </div>
                     <div class="w3-container w3-padding">
-                        <div>Hot Wheels</div>
-                        <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
+                        <b>Kakss Cast Iron Vinyl Coated Dumbbells</b>
+                        <div><s class="discount">$ 11.59</s> <span class="price">$ 5.09</span></div>
                     </div>
                 </a>
-                <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left" style="width:150px;height:200px">
-                    <div class="card-img" style="width:100%; height:150px; background-color:#D61D4E;"></div>
-                    <!--<img class="card-img" src="img/img,jpg" alt="item image" style="width:95%">-->
+                <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left contentcar" style="width:150px;height:260px">
+                    <div class="card-img w3-grey" style="width:100%; height:200px; overflow: hidden">
+                        <img class="card-img" src="../../img/products/speaker.jpg" alt="item image" style="width:100%">
+                    </div>
                     <div class="w3-container w3-padding">
-                        <div>Hot Wheels</div>
-                        <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
+                        <b>Zebronics Zeb-Warrior 2.0 Multimedia</b>
+                        <div><s class="discount">$ 19.33</s> <span class="price">$ 12.17</span></div>
                     </div>
                 </a>
-                <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left" style="width:150px;height:200px">
-                    <div class="card-img" style="width:100%; height:150px; background-color:#D61D4E;"></div>
-                    <!--<img class="card-img" src="img/img,jpg" alt="item image" style="width:95%">-->
-                    <div class="w3-container w3-padding">
-                        <div>Hot Wheels</div>
-                        <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
+                <a href="product.html" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left contentcar" style="width:150px;height:260px">
+                    <div class="card-img w3-grey" style="width:100%; height:200px; overflow: hidden">
+                        <img class="card-img" src="../../img/products/mixers.jpg" alt="item image" style="width:100%">
                     </div>
-                </a>
-                <a href="" class="w3-btn w3-card w3-round-large w3-left-align margin-8 card inlineblock  w3-left" style="width:150px;height:200px">
-                    <div class="card-img" style="width:100%; height:150px; background-color:#D61D4E;"></div>
-                    <!--<img class="card-img" src="img/img,jpg" alt="item image" style="width:95%">-->
                     <div class="w3-container w3-padding">
-                        <div>Hot Wheels</div>
-                        <div><s class="discount">Rp100.000</s> <span class="price">Rp88.888</span></div>
+                        <b>Premium Mixer Grinder with 3 Jars</b>
+                        <div><s class="discount">$ 43.52</s> <span class="price">$ 40.04</span></div>
                     </div>
                 </a>
             </div>
         </div>
         <!--button-->
-        <div class='w3-left w3-center' id ="buttonright"style="width:9vw;height:216px;line-height:216px">
-            <div class='w3-button  w3-circle' style="width:100px;height:100px;line-height:90px;vertical-align: middle">
+        <div class='w3-left w3-center' style="width:9vw;height:260px;line-height:260px">
+            <button class='w3-button  w3-circle' id ="buttonright" style="width:7vw;height:7vw;line-height:6.5vw;vertical-align: middle">
                 >
-            </div>
+            </button>
         </div>
     </div>
     <footer class='w3-left ' style="width:100vw">
