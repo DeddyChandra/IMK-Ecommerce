@@ -332,16 +332,40 @@ br{
 }
 
 #backgroundleftnav{
+
+    
     background-image: url("../img/food.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size:105%;
+    color:white !important;
 
 }
 
 #backgroundleftnav1{
+    
     background-image: url("../img/electronic-gadgets.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size:105%;
+    color:white !important;
+}
+
+#backgroundleftnav2{
+    
+    background-image: url("../img/fashion.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:105%;
+    color:white !important;
+}
+
+
+.txt{
+    background-color:white;
+    color:black;
+}
+
+.visited{
+    background-color:#ccc !important;
 }
