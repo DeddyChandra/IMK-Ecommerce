@@ -45,19 +45,19 @@ selectAll.onchange = function(){
 }
 
 let price = 0;
-let itemPrice1 = 903;
-let itemDiscount1 = 1063;
-let itemPrice2 = 758;
+let itemPrice1 = 90.30;
+let itemDiscount1 = 106.30;
+let itemPrice2 = 75.80;
 let itemDiscount2 = 0;
-let itemPrice3 = 12700;
-let itemDiscount3 = 13000;
-let shippingPrice = 60;
+let itemPrice3 = 127.00;
+let itemDiscount3 = 130.00;
+let shippingPrice = 48.00;
 let item = 0;
 
 totalItem.textContent = "Item (" + item + ")";
-totalPrice.textContent = "Rp 0.00";
-shipping.textContent = formatRupiah((shippingPrice),"$ ");
-subTotal.textContent = formatRupiah((shippingPrice+price),"$ ");
+totalPrice.textContent = "$ 0.00";
+shipping.textContent = formatDollar((shippingPrice),"$ ");
+subTotal.textContent = formatDollar((shippingPrice+price),"$ ");
 
 remove1.onclick = function() {
     item1.className += " w3-hide";
@@ -74,48 +74,49 @@ remove3.onclick = function() {
     qty3.value = 0;
 }
 
-price1.textContent = formatRupiah((qty1.value * itemPrice1),"$ ");
-discount1.textContent = formatRupiah((qty1.value * itemDiscount1),"$ ");
+price1.textContent = formatDollar((qty1.value * itemPrice1),"$ ");
+discount1.textContent = formatDollar((qty1.value * itemDiscount1),"$ ");
 
-price2.textContent = formatRupiah((qty1.value * itemPrice2),"$ ");
+price2.textContent = formatDollar((qty1.value * itemPrice2),"$ ");
 
-price3.textContent = formatRupiah((qty1.value * itemPrice3),"$ ");
-discount3.textContent = formatRupiah((qty1.value * itemDiscount3),"$ ");
+price3.textContent = formatDollar((qty1.value * itemPrice3),"$ ");
+discount3.textContent = formatDollar((qty1.value * itemDiscount3),"$ ");
 
-/* Fungsi formatRupiah */
-function formatRupiah(angka, prefix){
-	var number_string = angka.toString(),
-	split   		= number_string.split(','),
-	sisa     		= split[0].length % 3,
-	rupiah     		= split[0].substr(0, sisa),
-	ribuan     		= split[0].substr(sisa).match(/\d{3}/gi);
+/* Fungsi formatDollar */
+function formatDollar(angka, prefix){
+	// var number_string = angka.toString(),
+	// split   		= number_string.split('.'),
+	// sisa     		= split[0].length % 2,
+	// dollar     		= split[0].substr(0, sisa),
+	// titik     		= split[0].substr(sisa).match(/\d{2}/gi);
  
-	// tambahkan titik jika yang di input sudah menjadi angka ribuan
-	if(ribuan){
-		separator = sisa ? ',' : '';
-		rupiah += separator + ribuan.join(',');
-	}
+	// // tambahkan titik jika yang di input sudah menjadi angka ribuan
+	// if(titik){
+	// 	separator = sisa ? '.' : '';
+	// 	dollar += separator + titik.join('.');
+	// }
  
-	rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
-	return prefix == undefined ? rupiah : (rupiah ? '$  ' + rupiah + '.00' : '');
+	// dollar = split[1] != undefined ? dollar + '.' + split[1] : dollar;
+    // return prefix == undefined ? dollar : (dollar ? '$  ' + dollar : '');
+    return prefix + angka.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 }
 
 
 qty1.onchange = function(){
     totalPrice1 = qty1.value * itemPrice1;
-    price1.textContent = formatRupiah(totalPrice1,"$ ");
-    discount1.textContent = formatRupiah((qty1.value * itemDiscount1),"$ ");
+    price1.textContent = formatDollar(totalPrice1,"$ ");
+    discount1.textContent = formatDollar((qty1.value * itemDiscount1),"$ ");
 }
 
 qty2.onchange = function(){
     totalPrice2 = qty2.value * itemPrice2;
-    price2.textContent = formatRupiah(totalPrice2,"$ ");
+    price2.textContent = formatDollar(totalPrice2,"$ ");
 }
 
 qty3.onchange = function(){
     totalPrice3 = qty3.value * itemPrice3;
-    price3.textContent = formatRupiah(totalPrice3,"$ ");
-    discount3.textContent = formatRupiah((qty3.value * itemDiscount3),"$ ");
+    price3.textContent = formatDollar(totalPrice3,"$ ");
+    discount3.textContent = formatDollar((qty3.value * itemDiscount3),"$ ");
 }
 
 check1.onchange = function(){
@@ -151,7 +152,7 @@ function checkSelected(check, itemPrice, qty, remove){
         item = 0;
     }
     totalItem.textContent = "Item (" + item + ")";
-    totalPrice.textContent = formatRupiah(price,"$ ");
-    subTotal.textContent = formatRupiah((price + shippingPrice), "$ ")
+    totalPrice.textContent = formatDollar(price,"$ ");
+    subTotal.textContent = formatDollar((price + shippingPrice), "$ ")
 }
 

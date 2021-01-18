@@ -18,9 +18,19 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="../../js/account.js" defer></script>
         <script src="../../js/script.js" defer></script>
-        <script src="../../js/togglePassword.js" defer></script>
+		<script src="../../js/togglePassword.js" defer></script>
 		<link rel="stylesheet" href="../../css/style.css">
 		<title>Sign up</title>
+		<style>
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            input[type=number] {
+                -moz-appearance: textfield;
+            }
+        </style>
 		<div class="w3-border" style="width:100vw;height:92px;position:static;overflow:hidden">
 			<a href="indexBeforeLogin.html"><img src="../../img/logo_horizontal.png" class="w3-left w3-margin navimage" style='height:60px'></a>
 		</div>
@@ -57,7 +67,8 @@
                     <div class="w3-right">
                         <i class="fa fa-eye togglePassword unselectable" id="togglePassword"> Show password</i>
                     </div>
-                    <br>
+					<br>
+					<label>Birth Date:</label>
                     <input class="w3-input" type ="date" placeholder='Confirm password'>
                     <br>
                     <input class="w3-input" type ="number" placeholder='Telephone number'>
